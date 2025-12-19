@@ -1,14 +1,14 @@
 
 import React, { useEffect } from 'react';
-import Hero from './components/Hero';
-import PainBlock from './components/PainBlock';
-import MentalShift from './components/MentalShift';
-import Authority from './components/Authority';
-import WorkshopContent from './components/WorkshopContent';
-import SocialProof from './components/SocialProof';
-import Eligibility from './components/Eligibility';
-import FinalCta from './components/FinalCta';
-import Footer from './components/Footer';
+import Hero from './components/Hero.tsx';
+import PainBlock from './components/PainBlock.tsx';
+import MentalShift from './components/MentalShift.tsx';
+import Authority from './components/Authority.tsx';
+import WorkshopContent from './components/WorkshopContent.tsx';
+import SocialProof from './components/SocialProof.tsx';
+import Eligibility from './components/Eligibility.tsx';
+import FinalCta from './components/FinalCta.tsx';
+import Footer from './components/Footer.tsx';
 
 const App: React.FC = () => {
   useEffect(() => {
