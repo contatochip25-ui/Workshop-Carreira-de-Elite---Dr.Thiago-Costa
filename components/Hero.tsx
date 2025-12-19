@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
         <div className="relative w-full h-full">
           {/* The Image */}
           <img 
-            src="https://raw.githubusercontent.com/contatochip25-ui/DR.THIAGO-COSTA/main/public/images/drthiago1.jpg" 
+            src="https://raw.githubusercontent.com/contatochip25-ui/DR.THIAGO-COSTA/main/public/images/fotosorrindo.jpg" 
             alt="Dr. Thiago Costa" 
             className="w-full h-full object-cover opacity-40 lg:opacity-60 scale-110 lg:scale-100 object-top lg:object-center grayscale hover:grayscale-0 transition-all duration-1000"
           />

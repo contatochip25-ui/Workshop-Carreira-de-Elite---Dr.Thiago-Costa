@@ -11,7 +11,7 @@ const FinalCta: React.FC = () => {
       <div className="max-w-4xl mx-auto relative z-10">
         <div className="mb-8 md:mb-10 reveal opacity-0 translate-y-10 transition-all duration-700">
           <img 
-            src="https://raw.githubusercontent.com/contatochip25-ui/DR.THIAGO-COSTA/main/public/images/drthiago1.jpg" 
+            src="https://raw.githubusercontent.com/contatochip25-ui/DR.THIAGO-COSTA/main/public/images/fotoperfil.jpg" 
             alt="Dr. Thiago Costa" 
             className="w-20 h-20 md:w-24 md:h-24 rounded-full mx-auto border-2 border-[#d4af37]/30 grayscale hover:grayscale-0 transition-all object-cover"
           />
