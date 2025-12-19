@@ -7,8 +7,10 @@ import Authority from './components/Authority.tsx';
 import WorkshopContent from './components/WorkshopContent.tsx';
 import SocialProof from './components/SocialProof.tsx';
 import Eligibility from './components/Eligibility.tsx';
+import FAQ from './components/FAQ.tsx';
 import FinalCta from './components/FinalCta.tsx';
 import Footer from './components/Footer.tsx';
+import StickyCTA from './components/StickyCTA.tsx';
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -43,8 +45,10 @@ const App: React.FC = () => {
       <WorkshopContent />
       <SocialProof />
       <Eligibility />
+      <FAQ />
       <FinalCta />
       <Footer />
+      <StickyCTA />
     </div>
   );
 };

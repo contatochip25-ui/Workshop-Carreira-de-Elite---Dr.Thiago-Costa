@@ -27,7 +27,7 @@ const FinalCta: React.FC = () => {
         </p>
 
         <div className="px-4 reveal opacity-0 translate-y-10 transition-all duration-700 delay-200">
-          <button className="premium-led-btn min-w-[320px]">
+          <button className="premium-led-btn min-w-[320px] main-cta-button">
             <div className="premium-led-btn-inner px-10 py-5 text-sm md:text-lg flex items-center space-x-3">
               <span>Comprar Ingresso | Lote 01</span>
               <ChevronRight className="w-5 h-5" />

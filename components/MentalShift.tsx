@@ -38,7 +38,7 @@ const MentalShift: React.FC = () => {
               <img 
                 src="https://raw.githubusercontent.com/contatochip25-ui/DR.THIAGO-COSTA/main/public/images/drthiago2.jpg" 
                 alt="Estratégia Médica" 
-                className="w-full h-[300px] md:h-[400px] object-cover grayscale opacity-40 rounded-sm"
+                className="w-full h-[300px] md:h-[400px] object-cover object-top grayscale opacity-40 rounded-sm"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
            </div>

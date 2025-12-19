@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Calendar, Video, Ticket, ChevronRight } from 'lucide-react';
+import { Calendar, Video, Ticket, ChevronRight, Presentation } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <div className="flex items-center space-x-3">
             <div className="w-8 h-8 rounded-full border border-gold-text/50 flex items-center justify-center">
-              <span className="gold-text text-xs">✨</span>
+              <Presentation className="gold-text w-4 h-4" />
             </div>
             <div className="flex flex-col md:flex-row md:items-center md:space-x-4">
               <span className="text-white font-medium text-sm md:text-base">Workshop Carreira Médica</span>
@@ -72,7 +72,7 @@ const Hero: React.FC = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-6 reveal opacity-0 translate-y-10 transition-all duration-700 delay-300">
-            <button className="premium-led-btn min-w-[300px]">
+            <button className="premium-led-btn min-w-[300px] main-cta-button">
               <div className="premium-led-btn-inner px-8 py-4 text-sm md:text-base flex items-center space-x-2">
                 <span>Comprar Ingresso | Lote 01</span>
                 <ChevronRight className="w-5 h-5" />
