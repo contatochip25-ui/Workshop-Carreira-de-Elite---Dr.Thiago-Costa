@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Instagram, ArrowUpRight } from 'lucide-react';
 
 const Authority: React.FC = () => {
   return (
@@ -10,11 +11,11 @@ const Authority: React.FC = () => {
             <div className="absolute -inset-4 border border-[#d4af37]/20 rounded-sm group-hover:border-[#d4af37]/40 transition-all"></div>
             <img 
               src="https://raw.githubusercontent.com/contatochip25-ui/DR.THIAGO-COSTA/main/public/images/drthiagofoto.jpg" 
-              alt="Dr. Thiago" 
+              alt="Dr. Thiago Costa" 
               className="w-full grayscale brightness-75 hover:grayscale-0 transition-all duration-700 rounded-sm shadow-2xl"
             />
             <div className="absolute bottom-6 left-6 bg-black/60 backdrop-blur-md p-4 border-l-4 border-[#d4af37]">
-                <p className="font-serif text-xl gold-text">Dr. Thiago</p>
+                <p className="font-serif text-xl gold-text">Dr. Thiago Costa</p>
                 <p className="text-xs text-gray-400 uppercase tracking-widest">Mentor de Carreira Médica</p>
             </div>
           </div>
@@ -28,20 +29,34 @@ const Authority: React.FC = () => {
           
           <div className="space-y-6 text-gray-400 text-lg leading-relaxed font-light">
             <p>
-              O Dr. Thiago é médico endocrinologista e estrategista, referência em desenhar rotas de sucesso para médicos que buscam clareza e autoridade no mercado atual.
+              O Dr. Thiago Costa é médico endocrinologista e estrategista, referência em desenhar rotas de sucesso para médicos que buscam clareza e autoridade no mercado atual.
             </p>
             <p>
               Com uma atuação focada na formação de lideranças de alta performance, ele desenvolveu um método que entrega a direção exata para quem deseja sair da inércia dos plantões e construir uma trajetória de respeito e impacto.
             </p>
             <p>
-              Sua metodologia de "Maestria da Carreira" já guiou centenas de médicos na transição entre ser apenas um profissional técnico e se tornar um verdadeiro protagonista de sua jornada, com visão estratégica e resultados consistentes.
+              Sua metodologia de "Maestria da Carreira" já guiou centenas de médicos na transição entre ser apenas um profissional técnico e se tornar um verdadeiro protagonista de sua jornada.
             </p>
           </div>
           
-          <div className="mt-12 flex flex-wrap gap-4">
-             <div className="px-4 py-2 bg-zinc-900 border border-zinc-800 text-xs text-gray-300 rounded-full">Alta Performance Médica</div>
-             <div className="px-4 py-2 bg-zinc-900 border border-zinc-800 text-xs text-gray-300 rounded-full">Direção Estratégica</div>
-             <div className="px-4 py-2 bg-zinc-900 border border-zinc-800 text-xs text-gray-300 rounded-full">Arquitetura de Carreira</div>
+          <div className="mt-10 pt-8 border-t border-zinc-900 flex flex-col sm:flex-row items-start sm:items-center gap-6">
+            <a 
+              href="https://instagram.com/dr.thiago.costa" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center space-x-3 group bg-zinc-900/50 hover:bg-zinc-900 border border-zinc-800 px-6 py-3 rounded-sm transition-all"
+            >
+              <Instagram className="w-5 h-5 gold-text group-hover:scale-110 transition-transform" />
+              <div className="flex flex-col">
+                <span className="text-[10px] text-zinc-500 uppercase tracking-widest font-bold">Acompanhe no Instagram</span>
+                <span className="text-sm text-gray-200 flex items-center">@dr.thiago.costa <ArrowUpRight className="w-3 h-3 ml-1 opacity-50" /></span>
+              </div>
+            </a>
+
+            <div className="flex flex-wrap gap-3">
+               <div className="px-3 py-1 bg-zinc-900 border border-zinc-800 text-[10px] text-zinc-400 uppercase tracking-tighter rounded-sm">Performance</div>
+               <div className="px-3 py-1 bg-zinc-900 border border-zinc-800 text-[10px] text-zinc-400 uppercase tracking-tighter rounded-sm">Estratégia</div>
+            </div>
           </div>
         </div>
       </div>

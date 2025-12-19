@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Calendar, Video, Ticket, ChevronRight } from 'lucide-react';
+import { Calendar, Video, Ticket, ChevronRight, Instagram } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
@@ -19,7 +19,16 @@ const Hero: React.FC = () => {
             </div>
           </div>
           <div className="flex items-center space-x-6">
-            <div className="flex items-center space-x-2">
+            <a 
+              href="https://instagram.com/dr.thiago.costa" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 group"
+            >
+              <Instagram className="gold-text w-4 h-4 group-hover:scale-110 transition-transform" />
+              <span className="text-white/70 hover:text-white font-medium text-sm transition-colors tracking-tight">@dr.thiago.costa</span>
+            </a>
+            <div className="hidden md:flex items-center space-x-2">
               <Calendar className="gold-text w-4 h-4" />
               <span className="text-white font-medium text-sm">19 de Janeiro</span>
             </div>
