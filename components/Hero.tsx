@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
             <div className="flex items-center space-x-2">
               <Calendar className="gold-text w-4 h-4" />
               <div className="flex flex-col leading-tight">
-                <span className="text-white font-bold text-[10px] md:text-sm">18 de Janeiro</span>
+                <span className="text-white font-bold text-[10px] md:text-sm">24 e 25 de Janeiro</span>
                 <span className="text-zinc-500 text-[8px] md:text-[10px] uppercase tracking-tighter font-black">20h - 23h</span>
               </div>
             </div>
