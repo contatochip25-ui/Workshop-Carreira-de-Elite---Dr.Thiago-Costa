@@ -23,25 +23,25 @@ const Authority: React.FC = () => {
         <div className="w-full md:w-1/2 reveal opacity-0 translate-x-[20px] transition-all duration-1000">
           <span className="text-xs uppercase tracking-[0.3em] text-zinc-500 mb-4 block">A Liderança por trás do Workshop</span>
           <h2 className="font-serif text-4xl md:text-5xl mb-8 leading-tight">
-            Guiado por quem domina a engenharia do sucesso médico.
+            Guiado por quem conhece as trincheiras do mercado.
           </h2>
           
           <div className="space-y-6 text-gray-400 text-lg leading-relaxed font-light">
             <p>
-              O Dr. Thiago Costa é médico endocrinologista e estrategista, referência em desenhar rotas de sucesso para médicos que buscam clareza e autoridade no mercado atual.
+              O Dr. Thiago Costa é médico com vivência real no dia a dia de UPAs, UBSs e grandes hospitais. Ele entende por dentro o funcionamento das escalas e os critérios invisíveis que as coordenações usam para escolher quem fica e quem sai.
             </p>
             <p>
-              Com uma atuação focada na formação de lideranças de alta performance, ele desenvolveu um método que entrega a direção exata para quem deseja sair da inércia dos plantões e construir uma trajetória de respeito e impacto.
+              Cansado de ver médicos competentes perderem espaço para profissionais que apenas sabiam "se vender", ele decodificou as atitudes e comportamentos que transformam um recém-formado em uma autoridade confiável dentro de qualquer unidade.
             </p>
             <p>
-              Sua metodologia de "Maestria da Carreira" já guiou centenas de médicos na transição entre ser apenas um profissional técnico e se tornar um verdadeiro protagonista de sua jornada, com visão estratégica e resultados consistentes.
+              Este workshop é a entrega direta dessa engenharia, focada em dar clareza para quem deseja sair da inércia dos plantões e construir uma trajetória de respeito, sem depender da sorte nos grupos de mensagens.
             </p>
           </div>
           
           <div className="mt-12 flex flex-wrap gap-4">
-             <div className="px-4 py-2 bg-zinc-900 border border-zinc-800 text-xs text-gray-300 rounded-full">Alta Performance Médica</div>
-             <div className="px-4 py-2 bg-zinc-900 border border-zinc-800 text-xs text-gray-300 rounded-full">Direção Estratégica</div>
-             <div className="px-4 py-2 bg-zinc-900 border border-zinc-800 text-xs text-gray-300 rounded-full">Arquitetura de Carreira</div>
+             <div className="px-4 py-2 bg-zinc-900 border border-zinc-800 text-xs text-gray-300 rounded-full">Vivência em Emergência</div>
+             <div className="px-4 py-2 bg-zinc-900 border border-zinc-800 text-xs text-gray-300 rounded-full">Gestão de Escalas</div>
+             <div className="px-4 py-2 bg-zinc-900 border border-zinc-800 text-xs text-gray-300 rounded-full">Estratégia de Carreira</div>
           </div>
         </div>
       </div>

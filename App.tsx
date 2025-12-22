@@ -1,8 +1,10 @@
 
 import React, { useEffect } from 'react';
 import Hero from './components/Hero.tsx';
-import PainBlock from './components/PainBlock.tsx';
+import MarketChange from './components/MarketChange.tsx';
+import InvisibleCycle from './components/InvisibleCycle.tsx';
 import MentalShift from './components/MentalShift.tsx';
+import VideoTestimonials from './components/VideoTestimonials.tsx';
 import Authority from './components/Authority.tsx';
 import WorkshopContent from './components/WorkshopContent.tsx';
 import SocialProof from './components/SocialProof.tsx';
@@ -14,7 +16,6 @@ import StickyCTA from './components/StickyCTA.tsx';
 
 const App: React.FC = () => {
   useEffect(() => {
-    // Simple intersection observer for reveal animations
     const observerOptions = {
       threshold: 0.1,
     };
@@ -39,11 +40,12 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-[#0a0a0a]">
       <Hero />
       <SocialProof />
-      <PainBlock />
+      <MarketChange />
+      <InvisibleCycle />
       <MentalShift />
+      <VideoTestimonials />
       <Authority />
       <WorkshopContent />
-      <SocialProof />
       <Eligibility />
       <FAQ />
       <FinalCta />

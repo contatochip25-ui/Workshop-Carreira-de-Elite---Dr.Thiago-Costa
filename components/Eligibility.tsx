@@ -4,25 +4,25 @@ import { Check, X } from 'lucide-react';
 
 const Eligibility: React.FC = () => {
   const isFor = [
-    "Médicos recém-formados (até 3 anos de formado)",
-    "Acadêmicos de medicina no último ano/meses",
-    "Quem busca direção, não atalhos milagrosos",
-    "Quem quer evitar erros que custam anos de carreira",
-    "Médicos que desejam construir autoridade clínica"
+    "Médicos recém-formados que vivem de plantões instáveis",
+    "Quem quer sair da disputa por escala em grupos de WhatsApp",
+    "Médicos que buscam previsibilidade para estudar para residência",
+    "Quem entende que o mercado mudou e quer se adaptar",
+    "Quem deseja ser convidado para as melhores escalas fixas"
   ];
 
   const isNotFor = [
-    "Quem espera fórmulas mágicas de enriquecimento",
-    "Quem não quer assumir responsabilidade pela carreira",
-    "Buscadores de soluções rápidas e superficiais",
-    "Médicos satisfeitos com a média do mercado"
+    "Quem acredita que o mercado vai voltar a ser escasso",
+    "Quem aceita viver eternamente disputando plantões avulsos",
+    "Quem não está disposto a mudar comportamento e postura profissional",
+    "Quem busca fórmulas mágicas sem mudança de atitude clínica"
   ];
 
   return (
     <section className="py-24 px-6 bg-[#0d0d0d]">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
         <div className="reveal opacity-0 translate-x-[-20px] transition-all duration-700">
-          <h2 className="font-serif text-3xl mb-12 border-b border-zinc-800 pb-4">É para você se:</h2>
+          <h2 className="font-serif text-3xl mb-12 border-b border-zinc-800 pb-4">Este Workshop é para você se:</h2>
           <ul className="space-y-6">
             {isFor.map((item, idx) => (
               <li key={idx} className="flex items-start space-x-4">
@@ -34,7 +34,7 @@ const Eligibility: React.FC = () => {
         </div>
         
         <div className="reveal opacity-0 translate-x-[20px] transition-all duration-700">
-          <h2 className="font-serif text-3xl mb-12 border-b border-zinc-800 pb-4">Não é para você se:</h2>
+          <h2 className="font-serif text-3xl mb-12 border-b border-zinc-800 pb-4">NÃO é para você se:</h2>
           <ul className="space-y-6">
             {isNotFor.map((item, idx) => (
               <li key={idx} className="flex items-start space-x-4">

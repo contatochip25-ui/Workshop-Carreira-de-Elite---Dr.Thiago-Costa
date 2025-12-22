@@ -18,18 +18,18 @@ const FinalCta: React.FC = () => {
         </div>
 
         <h2 className="font-serif text-3xl md:text-7xl mb-8 md:mb-10 leading-tight reveal opacity-0 translate-y-10 transition-all duration-700">
-          Os primeiros anos da carreira não voltam.<br />
-          <span className="gold-text">Decidir cedo muda tudo.</span>
+          O mercado médico não perdoa a inércia.<br />
+          <span className="gold-text">Sua escala fixa começa aqui.</span>
         </h2>
         
         <p className="text-gray-400 text-base md:text-xl mb-10 md:mb-12 max-w-2xl mx-auto px-2 reveal opacity-0 translate-y-10 transition-all duration-700 delay-100">
-          O custo de adiar sua visão estratégica é infinitamente maior do que o valor do ingresso. Este é o seu ponto de virada.
+          Pare de mendigar plantões e aprenda o jogo real das unidades de saúde. Todo o conteúdo será entregue integralmente no workshop ao vivo.
         </p>
 
         <div className="px-4 reveal opacity-0 translate-y-10 transition-all duration-700 delay-200">
           <button className="premium-led-btn min-w-[320px] main-cta-button">
             <div className="premium-led-btn-inner px-10 py-5 text-sm md:text-lg flex items-center space-x-3">
-              <span>Comprar Ingresso | Lote 01</span>
+              <span>COMPRAR INGRESSO | LOTE 01</span>
               <ChevronRight className="w-5 h-5" />
             </div>
           </button>

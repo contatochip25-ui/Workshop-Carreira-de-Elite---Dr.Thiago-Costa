@@ -3,44 +3,41 @@ import React from 'react';
 
 const MentalShift: React.FC = () => {
   return (
-    <section className="py-20 md:py-32 px-6 bg-[#0a0a0a] border-y border-zinc-800 relative overflow-hidden">
+    <section className="py-20 md:py-32 px-6 bg-[#0a0a0a] relative overflow-hidden">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12 md:gap-16">
         <div className="w-full lg:w-3/5 text-center lg:text-left">
-          <h2 className="font-serif text-3xl md:text-6xl mb-10 leading-tight reveal opacity-0 translate-y-10 transition-all duration-700">
-            “O problema não é falta de esforço.<br />
-            <span className="gold-text">É falta de visão.</span>”
+          <h2 className="font-serif text-3xl md:text-5xl mb-10 leading-tight reveal opacity-0 translate-y-10 transition-all duration-700">
+            Por que alguns médicos conseguem escala fixa e a maioria não?
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 md:mt-16 text-left">
-            <div className="reveal opacity-0 translate-y-10 transition-all duration-700 border-l border-zinc-800 pl-6 md:border-l-0 md:pl-0">
-              <h3 className="gold-text font-serif text-xl mb-3">Técnicos vs. Estrategistas</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 text-left">
+            <div className="reveal opacity-0 translate-y-10 transition-all duration-700 border-l border-gold-text pl-6">
+              <h3 className="gold-text font-serif text-xl mb-3">O Olhar da Equipe</h3>
               <p className="text-gray-400 text-sm leading-relaxed">
-                A faculdade forma técnicos, mas o mercado exige estrategistas da própria carreira.
+                A enfermagem, a coordenação e a equipe observam seu comportamento. Médicos confiáveis e organizados são os primeiros a serem convidados para o "time de dentro".
               </p>
             </div>
-            <div className="reveal opacity-0 translate-y-10 transition-all duration-700 delay-150 border-l border-zinc-800 pl-6 md:border-l-0 md:pl-0">
-              <h3 className="gold-text font-serif text-xl mb-3">A Janela de Ouro</h3>
+            <div className="reveal opacity-0 translate-y-10 transition-all duration-700 delay-150 border-l border-gold-text pl-6">
+              <h3 className="gold-text font-serif text-xl mb-3">Postura vs. Técnica</h3>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Os primeiros 3 anos definem o teto financeiro e intelectual de toda a sua jornada.
-              </p>
-            </div>
-            <div className="reveal opacity-0 translate-y-10 transition-all duration-700 delay-300 border-l border-zinc-800 pl-6 md:border-l-0 md:pl-0">
-              <h3 className="gold-text font-serif text-xl mb-3">Investimento</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                Trabalhar mais não resolve falta de rota. O workshop é o seu novo GPS.
+                Ser um excelente técnico é o básico. O que garante sua escala é sua postura relacional e como você resolve o problema da unidade sem gerar novos.
               </p>
             </div>
           </div>
+          
+          <p className="mt-12 text-gray-300 font-light leading-relaxed reveal opacity-0 translate-y-10 transition-all duration-700">
+            Existe um padrão claro de quem é preferido pela coordenação. No workshop, eu vou te entregar os códigos desse jogo.
+          </p>
         </div>
 
         <div className="w-full lg:w-2/5 reveal opacity-0 translate-x-[20px] transition-all duration-1000">
-           <div className="relative group">
+           <div className="relative group rounded-sm overflow-hidden">
               <img 
                 src="https://raw.githubusercontent.com/contatochip25-ui/DR.THIAGO-COSTA/main/public/images/drthiago2.jpg" 
                 alt="Estratégia Médica" 
-                className="w-full h-[300px] md:h-[400px] object-cover object-top grayscale opacity-40 rounded-sm"
+                className="w-full h-[300px] md:h-[450px] object-cover object-top grayscale opacity-50 transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
            </div>
         </div>
       </div>

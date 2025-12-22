@@ -11,13 +11,13 @@ const SocialProof: React.FC = () => {
         
         <div className="relative w-full h-2 md:h-3 bg-zinc-900 rounded-full overflow-hidden mb-6 reveal opacity-0 transition-all duration-1000 shadow-inner">
           <div 
-            className="absolute top-0 left-0 h-full gradient-gold transition-all duration-[2500ms] ease-in-out w-[3%] shadow-[0_0_15px_rgba(212,175,55,0.4)]"
+            className="absolute top-0 left-0 h-full gradient-gold transition-all duration-[2500ms] ease-in-out w-[13%] shadow-[0_0_15px_rgba(212,175,55,0.4)]"
           ></div>
         </div>
         
         <div className="flex flex-col items-center justify-center space-y-2">
           <span className="text-sm md:text-base gold-text font-bold tracking-widest uppercase animate-pulse">
-            Vagas Preenchidas: 3%
+            Vagas Preenchidas: 13%
           </span>
         </div>
         
