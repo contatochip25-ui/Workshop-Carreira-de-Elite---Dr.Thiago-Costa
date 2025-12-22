@@ -6,7 +6,7 @@ const VideoTestimonials: React.FC = () => {
   const testimonials = [1, 2, 3]; // Placeholders para vídeos
 
   return (
-    <section className="py-24 px-6 bg-zinc-950">
+    <section className="py-20 md:py-32 px-6 bg-zinc-950">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 reveal opacity-0 translate-y-10 transition-all duration-700">
           <h2 className="font-serif text-3xl md:text-5xl mb-6">
@@ -17,7 +17,7 @@ const VideoTestimonials: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((id) => (
             <div 
               key={id} 
@@ -32,8 +32,8 @@ const VideoTestimonials: React.FC = () => {
                 <PlayCircle className="w-12 h-12 gold-text opacity-70 group-hover:opacity-100 transition-all transform group-hover:scale-110 z-30" />
                 
                 <div className="absolute bottom-6 left-6 z-30">
-                  <p className="text-white font-bold text-sm">Dr(a). Fulano(a)</p>
-                  <p className="text-zinc-400 text-[10px] uppercase tracking-widest">Ex-membro de grupos de plantão</p>
+                  <p className="text-white font-bold text-sm">Dr(a). Residente</p>
+                  <p className="text-zinc-400 text-[10px] uppercase tracking-widest">Escala Fixa em Emergência</p>
                 </div>
               </div>
             </div>

@@ -40,10 +40,10 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-[#0a0a0a]">
       <Hero />
       <SocialProof />
+      <VideoTestimonials />
       <MarketChange />
       <InvisibleCycle />
       <MentalShift />
-      <VideoTestimonials />
       <Authority />
       <WorkshopContent />
       <Eligibility />
