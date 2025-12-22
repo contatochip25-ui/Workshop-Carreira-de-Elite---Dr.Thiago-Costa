@@ -34,16 +34,16 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* Background Image - Adjusted proportions for Desktop and darkened for Mobile */}
+      {/* Background Image - Darkened for Mobile / Adjusted for Desktop */}
       <div className="absolute top-0 right-0 w-full lg:w-[55%] h-full z-0 pointer-events-none overflow-hidden">
         <div className="relative w-full h-full">
           <img 
             src="https://raw.githubusercontent.com/contatochip25-ui/DR.THIAGO-COSTA/main/public/images/fotosorrindo.jpg" 
             alt="Dr. Thiago Costa" 
-            className="w-full h-full object-cover opacity-40 lg:opacity-85 scale-110 lg:scale-110 object-top md:object-center grayscale brightness-[0.9] lg:brightness-[1.2] contrast-[1.1] lg:translate-x-10"
+            className="w-full h-full object-cover opacity-30 lg:opacity-85 scale-110 lg:scale-110 object-top md:object-center grayscale brightness-[0.7] lg:brightness-[1.2] contrast-[1.1] lg:translate-x-10 transition-all duration-700"
           />
-          {/* Refined gradient mask for Desktop Proportion */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/60 lg:via-black/40 to-transparent"></div>
+          {/* Refined gradient mask - Darker on mobile for maximum legibility */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 lg:via-black/40 to-transparent"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
         </div>
       </div>
@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
             <div className="flex items-start mb-10 md:mb-16 max-w-2xl reveal opacity-0 translate-y-10 transition-all duration-700 delay-200">
                <div className="w-1.5 md:w-2.5 h-20 md:h-32 bg-gold-text mr-5 md:mr-12 opacity-70 shrink-0 rounded-full shadow-[0_0_15px_rgba(212,175,55,0.4)]"></div>
                <p className="text-base sm:text-lg md:text-2xl text-gray-200 leading-relaxed font-light">
-                 O problema não é falta de estudo ou effort, é não entender o <span className="text-white font-bold border-b border-gold-text/40">jogo comportamental</span> que define quem fica com as escalas fixas e quem é descartado. Aprenda a sair da disputa por plantões avulsos.
+                 O problema não é falta de estudo ou esforço, é não entender o <span className="text-white font-bold border-b border-gold-text/40">jogo comportamental</span> que define quem fica com as escalas fixas e quem é descartado. Aprenda a sair da disputa por plantões avulsos.
                </p>
             </div>
 
