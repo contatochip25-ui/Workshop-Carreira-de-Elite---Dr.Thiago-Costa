@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ShieldCheck, Mail, Headphones, ChevronRight } from 'lucide-react';
+import { ShieldCheck, Mail, Headphones, ChevronRight, Ticket, Clock } from 'lucide-react';
 
 const FinalCta: React.FC = () => {
   return (
@@ -26,13 +26,30 @@ const FinalCta: React.FC = () => {
           Pare de mendigar plantões e aprenda o jogo real das unidades de saúde. Todo o conteúdo será entregue integralmente no workshop ao vivo.
         </p>
 
-        <div className="px-4 reveal opacity-0 translate-y-10 transition-all duration-700 delay-200">
-          <button className="premium-led-btn min-w-[320px] main-cta-button">
-            <div className="premium-led-btn-inner px-10 py-5 text-sm md:text-lg flex items-center space-x-3">
+        <div className="flex flex-col items-center reveal opacity-0 translate-y-10 transition-all duration-700 delay-200">
+          <button className="premium-led-btn w-full sm:w-auto sm:min-w-[320px] main-cta-button">
+            <div className="premium-led-btn-inner px-10 py-5 text-sm md:text-lg flex items-center justify-center space-x-3">
               <span>COMPRAR INGRESSO | LOTE 01</span>
               <ChevronRight className="w-5 h-5" />
             </div>
           </button>
+
+          {/* Progress Bar below last button as requested */}
+          <div className="w-full sm:w-[320px] mt-6">
+            <div className="w-full h-1.5 bg-[#262626] mb-3">
+              <div className="h-full bg-white w-[13%]"></div>
+            </div>
+            <div className="flex items-center justify-between text-[10px] md:text-sm font-bold uppercase tracking-widest px-1">
+              <div className="flex items-center space-x-2 text-zinc-400">
+                <Ticket className="w-3.5 h-3.5 md:w-5 md:h-5 gold-text" />
+                <span>Vagas: 13%</span>
+              </div>
+              <div className="flex items-center space-x-2 text-zinc-600">
+                <Clock className="w-3.5 h-3.5 md:w-4 md:h-4" />
+                <span>Lote 01</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 max-w-3xl mx-auto reveal opacity-0 translate-y-10 transition-all duration-700 delay-300">

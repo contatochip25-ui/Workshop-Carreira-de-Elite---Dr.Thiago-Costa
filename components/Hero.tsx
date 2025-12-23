@@ -5,7 +5,7 @@ import { Calendar, Video, Ticket, ChevronRight, Presentation, Clock } from 'luci
 const Hero: React.FC = () => {
   return (
     <section className="relative min-h-[100svh] md:min-h-screen flex flex-col pt-16 md:pt-0 overflow-hidden bg-black">
-      {/* Top Bar Info - Optimized for mobile hierarchy */}
+      {/* Top Bar Info - Updated with Zoom integration */}
       <div className="absolute top-0 left-0 w-full z-30 px-5 py-4 md:px-12 md:py-8 border-b border-white/5 bg-black/60 backdrop-blur-xl md:bg-transparent md:border-none">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-3 md:gap-4">
           <div className="flex items-center space-x-3">
@@ -18,17 +18,29 @@ const Hero: React.FC = () => {
               <span className="text-white/40 text-[8px] md:text-xs uppercase tracking-[0.2em] font-light italic">Maestria da Carreira de Elite</span>
             </div>
           </div>
+          
           <div className="flex items-center space-x-5 md:space-x-10">
+            {/* Date and Time Section */}
             <div className="flex items-center space-x-3">
               <Calendar className="gold-text w-4 h-4 md:w-5 md:h-5" />
               <div className="flex flex-col leading-tight">
-                <span className="text-white font-bold text-[10px] md:text-base">24 e 25 de Janeiro</span>
+                <span className="text-white font-bold text-[10px] md:text-base leading-none mb-0.5">24 e 25 de Janeiro</span>
                 <span className="text-zinc-500 text-[8px] md:text-xs uppercase tracking-tighter font-black">20h - 23h</span>
               </div>
             </div>
+
+            {/* Live Indicator */}
             <div className="flex items-center space-x-2">
-              <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-red-600 rounded-full animate-pulse shadow-[0_0_10px_rgba(220,38,38,0.8)]"></div>
+              <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-red-600 rounded-full animate-pulse shadow-[0_0_8px_rgba(220,38,38,0.6)]"></div>
               <span className="text-white font-black text-[10px] md:text-base uppercase tracking-widest">Ao Vivo</span>
+            </div>
+
+            {/* Zoom Integration - Perfectly fitted as requested */}
+            <div className="flex items-center space-x-2 border-l border-white/10 pl-5 md:pl-10">
+              <div className="bg-[#2D8CFF]/10 p-1 rounded-sm">
+                <Video className="w-3 h-3 md:w-4 md:h-4 text-[#2D8CFF]" />
+              </div>
+              <span className="text-white font-black text-[10px] md:text-base uppercase tracking-widest">via Zoom</span>
             </div>
           </div>
         </div>
@@ -74,21 +86,28 @@ const Hero: React.FC = () => {
                </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-6 md:gap-12 reveal opacity-0 translate-y-10 transition-all duration-700 delay-300">
+            <div className="flex flex-col items-stretch sm:items-start reveal opacity-0 translate-y-10 transition-all duration-700 delay-300">
               <button className="premium-led-btn w-full sm:w-auto sm:min-w-[360px] main-cta-button shadow-2xl shadow-gold-text/20 hover:scale-105 transition-transform">
                 <div className="premium-led-btn-inner px-8 py-5 md:px-14 md:py-8 text-xs md:text-xl flex items-center justify-center space-x-4">
                   <span className="font-black tracking-[0.2em]">COMPRAR INGRESSO | LOTE 01</span>
                   <ChevronRight className="w-5 h-5 md:w-8 md:h-8" />
                 </div>
               </button>
-              <div className="flex flex-col items-center sm:items-start gap-2 px-2">
-                <div className="flex items-center space-x-3 text-zinc-400 text-[10px] md:text-base uppercase tracking-[0.2em] font-black">
-                  <Ticket className="w-4 h-4 md:w-6 md:h-6 gold-text animate-pulse" />
-                  <span>Apenas 36 vagas restantes</span>
+              
+              {/* Progress Bar below Button as requested */}
+              <div className="w-full sm:w-[360px] mt-6">
+                <div className="w-full h-1.5 bg-[#262626] mb-3">
+                  <div className="h-full bg-white w-[13%]"></div>
                 </div>
-                <div className="flex items-center space-x-3 text-zinc-600 text-[9px] md:text-sm uppercase tracking-widest sm:ml-9 font-bold">
-                  <Clock className="w-3.5 h-3.5 md:w-5 md:h-5" />
-                  <span>Início pontual às 20h</span>
+                <div className="flex items-center justify-between text-[10px] md:text-sm font-bold uppercase tracking-widest">
+                  <div className="flex items-center space-x-2 text-zinc-400">
+                    <Ticket className="w-3.5 h-3.5 md:w-5 md:h-5 gold-text" />
+                    <span>Vagas: 13%</span>
+                  </div>
+                  <div className="flex items-center space-x-2 text-zinc-600">
+                    <Clock className="w-3.5 h-3.5 md:w-4 md:h-4" />
+                    <span>Lote 01</span>
+                  </div>
                 </div>
               </div>
             </div>
