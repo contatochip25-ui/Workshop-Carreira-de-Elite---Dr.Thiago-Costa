@@ -1,14 +1,13 @@
 
 import React, { useEffect } from 'react';
 import Hero from './components/Hero.tsx';
-import SocialProof from './components/SocialProof.tsx';
-import PainBlock from './components/PainBlock.tsx';
 import MarketChange from './components/MarketChange.tsx';
 import InvisibleCycle from './components/InvisibleCycle.tsx';
-import Authority from './components/Authority.tsx';
-import WorkshopContent from './components/WorkshopContent.tsx';
 import MentalShift from './components/MentalShift.tsx';
 import VideoTestimonials from './components/VideoTestimonials.tsx';
+import Authority from './components/Authority.tsx';
+import WorkshopContent from './components/WorkshopContent.tsx';
+import SocialProof from './components/SocialProof.tsx';
 import Eligibility from './components/Eligibility.tsx';
 import FAQ from './components/FAQ.tsx';
 import FinalCta from './components/FinalCta.tsx';
@@ -39,36 +38,17 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-[#0a0a0a]">
-      {/* 1. IMPACTO + POSICIONAMENTO */}
       <Hero />
-      
-      {/* 2. REFORÇO DE ADESÃO (Simplificado) */}
       <SocialProof />
-      
-      {/* 3. IDENTIFICAÇÃO COM A DOR (Subiu para conectar com público frio) */}
-      <PainBlock />
+      <VideoTestimonials />
       <MarketChange />
       <InvisibleCycle />
-      
-      {/* 4. AUTORIDADE E VISÃO */}
-      <Authority />
-      
-      {/* 5. O QUE É O EVENTO + O QUE VAI APRENDER */}
-      <WorkshopContent />
       <MentalShift />
-      
-      {/* 6. PROVA SOCIAL EM VÍDEO */}
-      <VideoTestimonials />
-      
-      {/* 7. ESTRUTURA E REGRAS */}
+      <Authority />
+      <WorkshopContent />
       <Eligibility />
-      
-      {/* 8. CLAREZA FINAL */}
       <FAQ />
-      
-      {/* 9. FECHAMENTO FINAL */}
       <FinalCta />
-      
       <Footer />
       <StickyCTA />
     </div>
