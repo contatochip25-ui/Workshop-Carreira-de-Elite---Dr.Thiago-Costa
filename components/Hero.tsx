@@ -30,9 +30,15 @@ const Hero: React.FC = () => {
           </div>
 
           <div className="flex items-center space-x-4">
-             <div className="flex items-center space-x-2 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10">
-                <Calendar className="gold-text w-3.5 h-3.5" />
-                <span className="text-white font-bold text-[9px] md:text-xs whitespace-nowrap">24 e 25 JAN às 20h</span>
+             <div className="flex flex-col items-end space-y-1">
+               <div className="flex items-center space-x-2 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10">
+                  <Calendar className="gold-text w-3.5 h-3.5" />
+                  <span className="text-white font-bold text-[9px] md:text-xs whitespace-nowrap">24 e 25 JAN às 20h</span>
+               </div>
+               <div className="flex items-center space-x-1.5 px-2">
+                  <Video className="w-2.5 h-2.5 text-[#58a6ff]" />
+                  <span className="text-zinc-400 text-[8px] uppercase tracking-widest font-bold">Transmissão via Zoom</span>
+               </div>
              </div>
              <div className="flex items-center space-x-1.5">
                 <div className="w-1.5 h-1.5 bg-red-500 rounded-full animate-pulse"></div>
@@ -76,16 +82,8 @@ const Hero: React.FC = () => {
               </div>
             </button>
             
-            {/* Info Badge below Button */}
-            <div className="flex items-center space-x-4 mt-8">
-              <div className="flex items-center space-x-1.5 text-[9px] text-zinc-300 uppercase tracking-widest font-bold">
-                 <Video className="w-3 h-3 text-[#58a6ff]" />
-                 <span>Transmissão via Zoom</span>
-              </div>
-            </div>
-
-            {/* Progress Bar - Equalized with FinalCta style */}
-            <div className="w-full sm:w-[320px] mt-10">
+            {/* Progress Bar - Moved immediately below button with 12px margin */}
+            <div className="w-full sm:w-[320px] mt-3">
               <div className="w-full h-1.5 bg-zinc-800 rounded-full overflow-hidden mb-4">
                 <div className="h-full bg-white w-[13%]"></div>
               </div>
