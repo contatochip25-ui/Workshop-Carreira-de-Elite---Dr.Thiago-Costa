@@ -3,7 +3,7 @@ import React from 'react';
 
 const Authority: React.FC = () => {
   return (
-    <section className="py-24 md:py-40 px-6 bg-zinc-950">
+    <section className="py-32 md:py-48 px-6 bg-zinc-950">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16 md:gap-24">
         <div className="w-full md:w-[45%] reveal opacity-0 translate-x-[-20px] transition-all duration-1000">
           <div className="relative group">
@@ -21,12 +21,12 @@ const Authority: React.FC = () => {
         </div>
         
         <div className="w-full md:w-[55%] reveal opacity-0 translate-x-[20px] transition-all duration-1000">
-          <span className="text-xs md:text-sm uppercase tracking-[0.4em] text-zinc-300 mb-6 block font-black">A Liderança por trás do Workshop</span>
-          <h2 className="font-serif text-4xl md:text-6xl mb-10 leading-tight text-white">
+          <span className="text-xs md:text-sm uppercase tracking-[0.4em] text-zinc-300 mb-8 block font-black">A Liderança por trás do Workshop</span>
+          <h2 className="font-serif text-4xl md:text-6xl mb-12 md:mb-14 leading-tight text-white">
             Guiado por quem conhece as trincheiras do mercado.
           </h2>
           
-          <div className="space-y-8 text-zinc-200 text-lg md:text-xl leading-relaxed font-light max-w-2xl">
+          <div className="space-y-10 text-zinc-200 text-lg md:text-xl leading-relaxed font-light max-w-2xl">
             <p>
               O Dr. Thiago Costa é médico com vivência real no dia a dia de UPAs, UBSs e grandes hospitais. Ele entende por dentro o funcionamento das escalas e os critérios invisíveis que as coordenações usam para escolher quem fica e quem sai.
             </p>
@@ -38,7 +38,7 @@ const Authority: React.FC = () => {
             </p>
           </div>
           
-          <div className="mt-14 flex flex-wrap gap-5">
+          <div className="mt-16 md:mt-20 flex flex-wrap gap-5">
              <div className="px-6 py-3 bg-zinc-900 border border-zinc-700 text-xs md:text-sm text-white rounded-full tracking-wider font-bold">Vivência em Emergência</div>
              <div className="px-6 py-3 bg-zinc-900 border border-zinc-700 text-xs md:text-sm text-white rounded-full tracking-wider font-bold">Gestão de Escalas</div>
              <div className="px-6 py-3 bg-zinc-900 border border-zinc-700 text-xs md:text-sm text-white rounded-full tracking-wider font-bold">Estratégia de Carreira</div>

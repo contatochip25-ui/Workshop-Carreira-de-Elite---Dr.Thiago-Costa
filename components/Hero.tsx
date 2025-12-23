@@ -47,13 +47,13 @@ const Hero: React.FC = () => {
         <div className="max-w-4xl mx-auto w-full text-center">
           {/* Tagline */}
           <div className="reveal opacity-0 translate-y-6 transition-all duration-700">
-            <span className="gold-text text-[8px] md:text-[10px] uppercase tracking-[0.4em] font-black bg-[#F4C542]/10 px-4 py-2 rounded-full border border-[#F4C542]/30 backdrop-blur-sm inline-block mb-6">
+            <span className="gold-text text-[8px] md:text-[10px] uppercase tracking-[0.4em] font-black bg-[#F4C542]/10 px-4 py-2 rounded-full border border-[#F4C542]/30 backdrop-blur-sm inline-block mb-8">
               O FIM DA ESCASSEZ MÉDICA
             </span>
           </div>
           
           {/* Smaller, cleaner Headline */}
-          <h1 className="font-serif text-[1.8rem] sm:text-3xl md:text-5xl lg:text-[3.5rem] font-bold mb-6 md:mb-8 leading-[1.2] text-white reveal opacity-0 translate-y-10 transition-all duration-700 delay-100 drop-shadow-xl">
+          <h1 className="font-serif text-[1.8rem] sm:text-3xl md:text-5xl lg:text-[3.5rem] font-bold mb-8 md:mb-10 leading-[1.2] text-white reveal opacity-0 translate-y-10 transition-all duration-700 delay-100 drop-shadow-xl">
             O médico deixou de ser raro.<br />
             <span className="italic text-[#F4C542] block mt-1">
               Agora é ele quem implora por espaço no mercado.
@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
           </h1>
           
           {/* Subtext with balanced size - Contrast optimized for #E5E5E5 equivalent */}
-          <div className="reveal opacity-0 translate-y-10 transition-all duration-700 delay-200 max-w-2xl mx-auto mb-10 md:mb-12">
+          <div className="reveal opacity-0 translate-y-10 transition-all duration-700 delay-200 max-w-2xl mx-auto mb-12 md:mb-16">
              <p className="text-sm sm:text-base md:text-xl text-zinc-100 leading-relaxed font-light">
                O problema não é falta de estudo ou esforço, é não entender o jogo comportamental que define quem fica com as <span className="text-white font-bold">escalas fixas</span> e quem é descartado. Aprenda a sair da disputa por <span className="text-white font-bold">plantões avulsos</span>.
              </p>
@@ -77,7 +77,7 @@ const Hero: React.FC = () => {
             </button>
             
             {/* Info Badge below Button */}
-            <div className="flex items-center space-x-4 mt-6">
+            <div className="flex items-center space-x-4 mt-8">
               <div className="flex items-center space-x-1.5 text-[9px] text-zinc-300 uppercase tracking-widest font-bold">
                  <Video className="w-3 h-3 text-[#58a6ff]" />
                  <span>Transmissão via Zoom</span>
@@ -85,8 +85,8 @@ const Hero: React.FC = () => {
             </div>
 
             {/* Progress Bar - Equalized with FinalCta style */}
-            <div className="w-full sm:w-[320px] mt-6">
-              <div className="w-full h-1.5 bg-zinc-800 rounded-full overflow-hidden mb-3">
+            <div className="w-full sm:w-[320px] mt-10">
+              <div className="w-full h-1.5 bg-zinc-800 rounded-full overflow-hidden mb-4">
                 <div className="h-full bg-white w-[13%]"></div>
               </div>
               <div className="flex items-center justify-center text-[11px] md:text-sm font-black uppercase tracking-widest px-1 space-x-2">

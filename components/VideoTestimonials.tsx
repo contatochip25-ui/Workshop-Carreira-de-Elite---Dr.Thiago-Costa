@@ -6,10 +6,10 @@ const VideoTestimonials: React.FC = () => {
   const testimonials = [1, 2, 3]; // Placeholders para vídeos
 
   return (
-    <section className="py-20 md:py-32 px-6 bg-zinc-950">
+    <section className="py-24 md:py-48 px-6 bg-zinc-950">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16 reveal opacity-0 translate-y-10 transition-all duration-700">
-          <h2 className="font-serif text-3xl md:text-5xl mb-6 text-white font-bold">
+        <div className="text-center mb-20 md:mb-24 reveal opacity-0 translate-y-10 transition-all duration-700">
+          <h2 className="font-serif text-3xl md:text-5xl mb-8 md:mb-10 text-white font-bold">
             Médicos que entenderam o jogo deixaram de disputar plantões.
           </h2>
           <p className="text-zinc-300 max-w-2xl mx-auto italic text-lg leading-relaxed">
@@ -17,7 +17,7 @@ const VideoTestimonials: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-12">
           {testimonials.map((id) => (
             <div 
               key={id} 

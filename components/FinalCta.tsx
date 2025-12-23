@@ -4,12 +4,12 @@ import { ShieldCheck, Mail, Headphones, ChevronRight, Ticket, Clock } from 'luci
 
 const FinalCta: React.FC = () => {
   return (
-    <section className="py-20 md:py-32 px-6 bg-[#0a0a0a] text-center relative overflow-hidden">
+    <section className="py-24 md:py-48 px-6 bg-[#0a0a0a] text-center relative overflow-hidden">
        {/* Background accent */}
        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] md:w-[600px] h-[400px] md:h-[600px] bg-[#F4C542]/5 blur-[100px] md:blur-[150px] rounded-full pointer-events-none"></div>
 
       <div className="max-w-4xl mx-auto relative z-10">
-        <div className="mb-8 md:mb-10 reveal opacity-0 translate-y-10 transition-all duration-700">
+        <div className="mb-12 md:mb-16 reveal opacity-0 translate-y-10 transition-all duration-700">
           <img 
             src="https://raw.githubusercontent.com/contatochip25-ui/DR.THIAGO-COSTA/main/public/images/fotoperfil.jpg" 
             alt="Dr. Thiago Costa" 
@@ -17,12 +17,12 @@ const FinalCta: React.FC = () => {
           />
         </div>
 
-        <h2 className="font-serif text-3xl md:text-7xl mb-8 md:mb-10 leading-tight text-white reveal opacity-0 translate-y-10 transition-all duration-700 font-bold">
+        <h2 className="font-serif text-3xl md:text-7xl mb-10 md:mb-14 leading-tight text-white reveal opacity-0 translate-y-10 transition-all duration-700 font-bold">
           O mercado médico não perdoa a inércia.<br />
           <span className="gold-text">Sua escala fixa começa aqui.</span>
         </h2>
         
-        <p className="text-zinc-200 text-base md:text-xl mb-10 md:mb-12 max-w-2xl mx-auto px-2 reveal opacity-0 translate-y-10 transition-all duration-700 delay-100 font-light leading-relaxed">
+        <p className="text-zinc-200 text-base md:text-xl mb-12 md:mb-16 max-w-2xl mx-auto px-2 reveal opacity-0 translate-y-10 transition-all duration-700 delay-100 font-light leading-relaxed">
           Pare de mendigar plantões e aprenda o jogo real das unidades de saúde. Todo o conteúdo será entregue integralmente no workshop ao vivo.
         </p>
 
@@ -35,8 +35,8 @@ const FinalCta: React.FC = () => {
           </button>
 
           {/* Progress Bar below last button as requested */}
-          <div className="w-full sm:w-[320px] mt-6">
-            <div className="w-full h-1.5 bg-zinc-800 mb-3 rounded-full overflow-hidden">
+          <div className="w-full sm:w-[320px] mt-10">
+            <div className="w-full h-1.5 bg-zinc-800 mb-4 rounded-full overflow-hidden">
               <div className="h-full bg-white w-[13%]"></div>
             </div>
             <div className="flex items-center justify-center text-[11px] md:text-sm font-black uppercase tracking-widest px-1 space-x-2">
@@ -46,7 +46,7 @@ const FinalCta: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 max-w-3xl mx-auto reveal opacity-0 translate-y-10 transition-all duration-700 delay-300">
+        <div className="mt-20 md:mt-28 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 max-w-3xl mx-auto reveal opacity-0 translate-y-10 transition-all duration-700 delay-300">
           <div className="flex items-center space-x-3 text-zinc-100 font-bold">
             <ShieldCheck className="w-4 h-4 text-[#F4C542]" />
             <span className="text-[10px] uppercase tracking-[0.2em]">Pagamento Seguro</span>
