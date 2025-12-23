@@ -84,14 +84,14 @@ const Hero: React.FC = () => {
               </div>
             </div>
 
-            {/* Progress Bar with cleaner styling */}
-            <div className="w-full sm:w-[320px] mt-8">
-              <div className="w-full h-1 bg-zinc-800 rounded-full overflow-hidden mb-2">
+            {/* Progress Bar - Equalized with FinalCta style */}
+            <div className="w-full sm:w-[320px] mt-6">
+              <div className="w-full h-1.5 bg-zinc-800 rounded-full overflow-hidden mb-3">
                 <div className="h-full bg-white w-[13%]"></div>
               </div>
-              <div className="flex items-center justify-center text-[9px] font-bold uppercase tracking-widest text-zinc-300 space-x-1.5">
-                <Ticket className="w-3 h-3 gold-text" />
-                <span>13% dos ingressos vendidos a R$27,00</span>
+              <div className="flex items-center justify-center text-[11px] md:text-sm font-black uppercase tracking-widest px-1 space-x-2">
+                <Ticket className="w-4 h-4 gold-text" />
+                <span className="text-zinc-100">13% dos ingressos vendidos a R$27,00</span>
               </div>
             </div>
           </div>
