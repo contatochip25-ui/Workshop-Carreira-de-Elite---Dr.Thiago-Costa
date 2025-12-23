@@ -32,33 +32,33 @@ const FAQ: React.FC = () => {
     <section className="py-24 px-6 bg-black border-t border-zinc-900">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-16 reveal opacity-0 translate-y-10 transition-all duration-700">
-          <h2 className="font-serif text-4xl md:text-5xl mb-6">Clareza Final</h2>
-          <p className="text-zinc-500 font-light italic">Respostas diretas para quem não tem tempo a perder.</p>
+          <h2 className="font-serif text-4xl md:text-5xl mb-6 text-white font-bold">Clareza Final</h2>
+          <p className="text-zinc-300 font-light italic text-lg">Respostas diretas para quem não tem tempo a perder.</p>
         </div>
 
         <div className="space-y-4">
           {faqData.map((item, idx) => (
             <div 
               key={idx} 
-              className="border border-zinc-800 rounded-sm overflow-hidden transition-all duration-300 reveal opacity-0 translate-y-10"
+              className="border border-zinc-800 rounded-sm overflow-hidden transition-all duration-300 reveal opacity-0 translate-y-10 bg-zinc-950"
               style={{ transitionDelay: `${idx * 100}ms` }}
             >
               <button 
                 onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
-                className="w-full flex items-center justify-between p-6 text-left hover:bg-zinc-900/50 transition-colors"
+                className="w-full flex items-center justify-between p-6 text-left hover:bg-zinc-900 transition-colors"
               >
-                <span className="font-serif text-lg md:text-xl text-zinc-200 pr-4">{item.question}</span>
+                <span className="font-serif text-lg md:text-xl text-white pr-4 font-bold">{item.question}</span>
                 {openIndex === idx ? (
                   <Minus className="w-5 h-5 gold-text shrink-0" />
                 ) : (
-                  <Plus className="w-5 h-5 text-zinc-600 shrink-0" />
+                  <Plus className="w-5 h-5 text-zinc-300 shrink-0" />
                 )}
               </button>
               
               <div 
-                className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === idx ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === idx ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}
               >
-                <div className="p-6 pt-0 text-zinc-400 font-light leading-relaxed border-t border-zinc-900/50">
+                <div className="p-6 pt-0 text-zinc-200 font-light leading-relaxed border-t border-zinc-900/50 text-base md:text-lg">
                   {item.answer}
                 </div>
               </div>
@@ -67,8 +67,8 @@ const FAQ: React.FC = () => {
         </div>
 
         <div className="mt-16 text-center reveal opacity-0 translate-y-10 transition-all duration-700">
-          <p className="text-zinc-600 text-sm">Ainda tem alguma dúvida técnica?</p>
-          <a href="#" className="gold-text text-sm underline underline-offset-4 hover:text-white transition-colors mt-2 inline-block">
+          <p className="text-zinc-300 text-sm font-bold">Ainda tem alguma dúvida técnica?</p>
+          <a href="#" className="gold-text text-sm underline underline-offset-4 hover:text-white transition-colors mt-2 inline-block font-black uppercase tracking-widest">
             Falar com suporte especializado
           </a>
         </div>

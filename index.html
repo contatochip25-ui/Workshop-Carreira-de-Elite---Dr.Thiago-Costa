@@ -16,26 +16,29 @@
         body {
             font-family: 'Inter', sans-serif;
             background-color: #000000;
-            color: #e5e5e5;
+            color: #F5F5F5;
             overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
         .font-serif {
             font-family: 'Cormorant Garamond', serif;
         }
+        /* Dourado atualizado para #F4C542 para maior contraste e brilho no mobile */
         .gold-text {
-            color: #d4af37;
+            color: #F4C542;
         }
         .gold-bg {
-            background-color: #d4af37;
+            background-color: #F4C542;
         }
         .gold-border {
-            border-color: #d4af37;
+            border-color: #F4C542;
         }
         .gradient-gold {
-            background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%);
+            background: linear-gradient(135deg, #F4C542 0%, #D4AF37 100%);
         }
         .smooth-shadow {
-            box-shadow: 0 10px 40px -10px rgba(212, 175, 55, 0.3);
+            box-shadow: 0 10px 40px -10px rgba(244, 197, 66, 0.3);
         }
         ::-webkit-scrollbar {
             width: 8px;
@@ -48,7 +51,7 @@
             border-radius: 4px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #d4af37;
+            background: #F4C542;
         }
 
         .premium-led-btn {
@@ -59,7 +62,7 @@
             align-items: center;
             justify-content: center;
             border-radius: 6px;
-            background: rgba(212, 175, 55, 0.2);
+            background: rgba(244, 197, 66, 0.3);
             transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
@@ -76,7 +79,7 @@
                 transparent,
                 transparent,
                 transparent,
-                #d4af37,
+                #F4C542,
                 transparent
             );
             animation: rotate-border 3s linear infinite;
@@ -93,7 +96,7 @@
             align-items: center;
             justify-content: center;
             white-space: nowrap;
-            color: #d4af37;
+            color: #F4C542;
             font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 0.15em;
@@ -101,7 +104,7 @@
         }
 
         .premium-led-btn:hover .premium-led-btn-inner {
-            background: #d4af37;
+            background: #F4C542;
             color: #000;
         }
 

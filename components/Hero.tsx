@@ -20,22 +20,22 @@ const Hero: React.FC = () => {
       <div className="relative z-30 w-full px-6 py-6 md:px-12">
         <div className="max-w-6xl mx-auto flex justify-between items-start md:items-center">
           <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 rounded-full border border-gold-text/30 flex items-center justify-center bg-black/40 backdrop-blur-md shrink-0">
+            <div className="w-8 h-8 rounded-full border border-[#F4C542]/40 flex items-center justify-center bg-black/60 backdrop-blur-md shrink-0">
               <Presentation className="gold-text w-4 h-4" />
             </div>
             <div className="flex flex-col">
               <span className="text-white font-bold text-[10px] md:text-xs tracking-[0.2em] uppercase">Workshop Carreira Médica</span>
-              <span className="text-gold-text/60 text-[8px] uppercase tracking-widest leading-none mt-1 font-medium">Maestria da Carreira de Elite</span>
+              <span className="text-[#F4C542] text-[8px] uppercase tracking-widest leading-none mt-1 font-semibold">Maestria da Carreira de Elite</span>
             </div>
           </div>
 
           <div className="flex items-center space-x-4">
-             <div className="flex items-center space-x-2 bg-black/40 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/5">
+             <div className="flex items-center space-x-2 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10">
                 <Calendar className="gold-text w-3.5 h-3.5" />
-                <span className="text-white font-bold text-[9px] md:text-xs">24 e 25 JAN</span>
+                <span className="text-white font-bold text-[9px] md:text-xs whitespace-nowrap">24 e 25 JAN às 20h</span>
              </div>
              <div className="flex items-center space-x-1.5">
-                <div className="w-1.5 h-1.5 bg-red-600 rounded-full animate-pulse"></div>
+                <div className="w-1.5 h-1.5 bg-red-500 rounded-full animate-pulse"></div>
                 <span className="text-white font-black text-[9px] md:text-xs uppercase tracking-widest">Ao Vivo</span>
              </div>
           </div>
@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
         <div className="max-w-4xl mx-auto w-full text-center">
           {/* Tagline */}
           <div className="reveal opacity-0 translate-y-6 transition-all duration-700">
-            <span className="gold-text text-[8px] md:text-[10px] uppercase tracking-[0.4em] font-black bg-gold-text/10 px-4 py-2 rounded-full border border-gold-text/20 backdrop-blur-sm inline-block mb-6">
+            <span className="gold-text text-[8px] md:text-[10px] uppercase tracking-[0.4em] font-black bg-[#F4C542]/10 px-4 py-2 rounded-full border border-[#F4C542]/30 backdrop-blur-sm inline-block mb-6">
               O FIM DA ESCASSEZ MÉDICA
             </span>
           </div>
@@ -60,44 +60,38 @@ const Hero: React.FC = () => {
             </span>
           </h1>
           
-          {/* Subtext with balanced size - Updated with requested text and keywords highlighted */}
+          {/* Subtext with balanced size - Contrast optimized for #E5E5E5 equivalent */}
           <div className="reveal opacity-0 translate-y-10 transition-all duration-700 delay-200 max-w-2xl mx-auto mb-10 md:mb-12">
-             <p className="text-sm sm:text-base md:text-xl text-zinc-300 leading-relaxed font-light">
+             <p className="text-sm sm:text-base md:text-xl text-zinc-100 leading-relaxed font-light">
                O problema não é falta de estudo ou esforço, é não entender o jogo comportamental que define quem fica com as <span className="text-white font-bold">escalas fixas</span> e quem é descartado. Aprenda a sair da disputa por <span className="text-white font-bold">plantões avulsos</span>.
              </p>
           </div>
 
           {/* CTA Group */}
           <div className="flex flex-col items-center reveal opacity-0 translate-y-10 transition-all duration-700 delay-300">
-            <button className="premium-led-btn w-full sm:w-auto sm:min-w-[320px] main-cta-button shadow-2xl shadow-gold-text/10 hover:scale-105 transition-transform">
-              <div className="premium-led-btn-inner px-8 py-5 md:px-12 md:py-6 text-[10px] md:text-sm flex items-center justify-center space-x-3">
-                <span className="font-black tracking-[0.2em]">COMPRAR INGRESSO | LOTE 01</span>
-                <ChevronRight className="w-5 h-5" />
+            <button className="premium-led-btn w-full sm:w-auto sm:min-w-[320px] main-cta-button shadow-2xl shadow-[#F4C542]/10 hover:scale-105 transition-transform">
+              <div className="premium-led-btn-inner px-8 py-5 md:px-12 md:py-6 text-[13px] md:text-base flex items-center justify-center space-x-3">
+                <span className="font-black tracking-[0.2em] text-[#F4C542]">COMPRAR INGRESSO | LOTE 01</span>
+                <ChevronRight className="w-5 h-5 text-[#F4C542]" />
               </div>
             </button>
             
             {/* Info Badge below Button */}
             <div className="flex items-center space-x-4 mt-6">
-              <div className="flex items-center space-x-1.5 text-[9px] text-zinc-500 uppercase tracking-widest font-bold">
-                 <Video className="w-3 h-3 text-[#2D8CFF]" />
+              <div className="flex items-center space-x-1.5 text-[9px] text-zinc-300 uppercase tracking-widest font-bold">
+                 <Video className="w-3 h-3 text-[#58a6ff]" />
                  <span>Transmissão via Zoom</span>
               </div>
             </div>
 
             {/* Progress Bar with cleaner styling */}
             <div className="w-full sm:w-[320px] mt-8">
-              <div className="w-full h-1 bg-zinc-900 rounded-full overflow-hidden mb-2">
+              <div className="w-full h-1 bg-zinc-800 rounded-full overflow-hidden mb-2">
                 <div className="h-full bg-white w-[13%]"></div>
               </div>
-              <div className="flex items-center justify-between text-[9px] font-bold uppercase tracking-widest text-zinc-500">
-                <div className="flex items-center space-x-1.5">
-                  <Ticket className="w-3 h-3 gold-text" />
-                  <span>Vagas: 13%</span>
-                </div>
-                <div className="flex items-center space-x-1.5">
-                  <Clock className="w-3 h-3" />
-                  <span>Lote 01</span>
-                </div>
+              <div className="flex items-center justify-center text-[9px] font-bold uppercase tracking-widest text-zinc-300 space-x-1.5">
+                <Ticket className="w-3 h-3 gold-text" />
+                <span>13% dos ingressos vendidos a R$27,00</span>
               </div>
             </div>
           </div>
