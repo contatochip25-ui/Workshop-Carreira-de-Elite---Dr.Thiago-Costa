@@ -31,11 +31,11 @@ const MentalShift: React.FC = () => {
         </div>
 
         <div className="w-full lg:w-2/5 reveal opacity-0 translate-x-[20px] transition-all duration-1000">
-           <div className="relative group rounded-sm overflow-hidden border border-zinc-800">
+           <div className="relative group rounded-sm overflow-hidden border border-zinc-800 aspect-square">
               <img 
                 src="https://raw.githubusercontent.com/contatochip25-ui/DR.THIAGO-COSTA/main/public/images/drthiago2.jpg" 
                 alt="Estratégia Médica" 
-                className="w-full h-[300px] md:h-[450px] object-cover object-top grayscale opacity-60 transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
+                className="w-full h-full object-cover object-center grayscale opacity-60 transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
            </div>

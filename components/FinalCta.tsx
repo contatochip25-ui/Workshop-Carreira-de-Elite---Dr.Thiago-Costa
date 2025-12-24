@@ -29,7 +29,7 @@ const FinalCta: React.FC = () => {
         <div className="flex flex-col items-center reveal opacity-0 translate-y-10 transition-all duration-700 delay-200">
           <button className="premium-led-btn w-full sm:w-auto sm:min-w-[320px] main-cta-button shadow-2xl shadow-[#F4C542]/10">
             <div className="premium-led-btn-inner px-10 py-5 text-[13px] md:text-base flex items-center justify-center space-x-3">
-              <span className="text-[#F4C542] font-black tracking-[0.2em]">GARANTIR MEU ACESSO | LOTE 01</span>
+              <span className="text-[#F4C542] font-black tracking-[0.2em]">COMPRAR INGRESSO | LOTE 01</span>
               <ChevronRight className="w-5 h-5 text-[#F4C542]" />
             </div>
           </button>
@@ -41,7 +41,7 @@ const FinalCta: React.FC = () => {
             </div>
             <div className="flex items-center justify-center text-[11px] md:text-sm font-black uppercase tracking-widest px-1 space-x-2">
               <Ticket className="w-4 h-4 gold-text" />
-              <span className="text-zinc-100">13% das vagas preenchidas a R$27,00</span>
+              <span className="text-zinc-100">13% das vagas preenchidas no Lote 01</span>
             </div>
           </div>
         </div>

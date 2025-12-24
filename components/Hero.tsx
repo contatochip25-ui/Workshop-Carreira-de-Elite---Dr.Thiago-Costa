@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
         <img 
           src="https://raw.githubusercontent.com/contatochip25-ui/DR.THIAGO-COSTA/main/public/images/fotosorrindo.jpg" 
           alt="Dr. Thiago Costa" 
-          className="w-full h-full object-cover object-top md:object-center grayscale brightness-[0.35] lg:brightness-[0.45] contrast-[1.1]"
+          className="w-full h-full object-cover object-top md:object-top grayscale brightness-[0.35] lg:brightness-[0.45] contrast-[1.1]"
         />
         {/* Refined gradient overlay to clear the top area and focus on the bottom text */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black"></div>
@@ -77,7 +77,7 @@ const Hero: React.FC = () => {
           <div className="flex flex-col items-center reveal opacity-0 translate-y-10 transition-all duration-700 delay-300">
             <button className="premium-led-btn w-full sm:w-auto sm:min-w-[320px] main-cta-button shadow-2xl shadow-[#F4C542]/10 hover:scale-105 transition-transform">
               <div className="premium-led-btn-inner px-8 py-5 md:px-12 md:py-6 text-[13px] md:text-base flex items-center justify-center space-x-3">
-                <span className="font-black tracking-[0.2em] text-[#F4C542]">QUERO MINHA ESCALA FIXA</span>
+                <span className="font-black tracking-[0.2em] text-[#F4C542]">COMPRAR INGRESSO | LOTE 01</span>
                 <ChevronRight className="w-5 h-5 text-[#F4C542]" />
               </div>
             </button>

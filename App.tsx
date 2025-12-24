@@ -15,6 +15,22 @@ import FinalCta from './components/FinalCta.tsx';
 import Footer from './components/Footer.tsx';
 import StickyCTA from './components/StickyCTA.tsx';
 
+const MarqueeTransition: React.FC = () => {
+  const text = "INSCRIÇÕES ABERTAS • VAGAS LIMITADAS • INSCRIÇÕES ABERTAS • VAGAS LIMITADAS";
+  return (
+    <div className="w-full bg-zinc-950 border-y border-zinc-900 overflow-hidden py-3 relative z-20">
+      <div className="animate-marquee-flow whitespace-nowrap flex">
+        <span className="text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] text-zinc-400 px-4">
+          {text} • {text} • {text}
+        </span>
+        <span className="text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] text-zinc-400 px-4">
+          {text} • {text} • {text}
+        </span>
+      </div>
+    </div>
+  );
+};
+
 const App: React.FC = () => {
   useEffect(() => {
     const observerOptions = {
@@ -41,6 +57,9 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-[#0a0a0a]">
       {/* MANTIDO INTACTO - HERO */}
       <Hero />
+      
+      {/* Elemento de Transição Marquee */}
+      <MarqueeTransition />
       
       {/* 1️⃣ Sessão de aprofundamento da dor e identificação */}
       <PainBlock />
