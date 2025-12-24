@@ -41,7 +41,7 @@ const FinalCta: React.FC = () => {
             </div>
             <div className="flex items-center justify-center text-[11px] md:text-sm font-black uppercase tracking-widest px-1 space-x-2">
               <Ticket className="w-4 h-4 gold-text" />
-              <span className="text-zinc-100">13% das vagas preenchidas no Lote 01</span>
+              <span className="text-zinc-100">16% dos ingressos vendidos a R$27,00</span>
             </div>
           </div>
         </div>
