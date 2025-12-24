@@ -9,8 +9,8 @@ const VideoTestimonials: React.FC = () => {
     <section className="py-24 md:py-48 px-6 bg-zinc-950">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-20 md:mb-24 reveal opacity-0 translate-y-10 transition-all duration-700">
-          <h2 className="font-serif text-3xl md:text-5xl mb-8 md:mb-10 text-white font-bold leading-tight">
-            Quem entendeu o jogo parou de mendigar plantões.
+          <h2 className="font-serif text-3xl md:text-5xl mb-8 md:mb-10 text-white font-bold leading-tight relative pb-6 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-0.5 after:bg-gradient-to-r after:from-transparent after:via-[#F4C542] after:to-transparent">
+            Quem entendeu o jogo <span className="gold-text">parou de mendigar plantões.</span>
           </h2>
           <p className="text-zinc-300 max-w-2xl mx-auto italic text-lg leading-relaxed">
             Médicos reais que trocaram a insegurança dos grupos de WhatsApp pela estabilidade e respeito de uma escala fixa de elite.

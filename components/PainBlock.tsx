@@ -20,8 +20,8 @@ const PainBlock: React.FC = () => {
            <div className="h-px flex-1 bg-zinc-800"></div>
         </div>
 
-        <h2 className="font-serif text-3xl md:text-5xl text-center mb-12 md:mb-16 leading-tight text-white reveal opacity-0 translate-y-10 transition-all duration-700">
-          O CRM deixou de ser um passaporte. Agora, ele é apenas o começo da disputa.
+        <h2 className="font-serif text-3xl md:text-5xl text-center mb-12 md:mb-16 leading-tight text-white reveal opacity-0 translate-y-10 transition-all duration-700 relative pb-6 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-0.5 after:bg-gradient-to-r after:from-transparent after:via-[#F4C542] after:to-transparent">
+          O CRM <span className="gold-text">deixou de ser um passaporte.</span> Agora, ele é apenas o <span className="gold-text">começo da disputa.</span>
         </h2>
 
         <div className="space-y-4 md:space-y-6">

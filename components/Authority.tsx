@@ -22,8 +22,8 @@ const Authority: React.FC = () => {
         
         <div className="w-full md:w-[55%] reveal opacity-0 translate-x-[20px] transition-all duration-1000">
           <span className="text-xs md:text-sm uppercase tracking-[0.4em] text-zinc-300 mb-8 block font-black">A Experiência nas Trincheiras</span>
-          <h2 className="font-serif text-4xl md:text-6xl mb-12 md:mb-14 leading-tight text-white">
-            Quem conhece o jogo de dentro não depende da sorte.
+          <h2 className="font-serif text-4xl md:text-6xl mb-12 md:mb-14 leading-tight text-white relative pl-6 border-l-4 border-[#F4C542]">
+            Quem conhece o <span className="gold-text">jogo de dentro</span> não depende da sorte.
           </h2>
           
           <div className="space-y-10 text-zinc-200 text-lg md:text-xl leading-relaxed font-light max-w-2xl">
@@ -31,7 +31,7 @@ const Authority: React.FC = () => {
               O Dr. Thiago Costa não é um acadêmico falando de teorias. Ele é um médico que viveu o caos das UPAs, a pressão das UBSs e a política dos grandes hospitais. Ele entende o que os coordenadores buscam quando decidem quem fica na escala.
             </p>
             <p>
-              Ao longo de anos, ele decodificou os comportamentos que fazem um médico recém-formado ser visto como uma autoridade absoluta em pouco tempo, garantindo convites para as melhores escalas da cidade.
+              Ao longo de anos, he decodificou os comportamentos que fazem um médico recém-formado ser visto como uma autoridade absoluta em pouco tempo, garantindo convites para as melhores escalas da cidade.
             </p>
             <p>
               Este workshop é a entrega direta dessa 'leitura de jogo', focada em dar clareza estratégica para quem cansou de ser apenas mais um nome em uma lista de espera de plantões avulsos.

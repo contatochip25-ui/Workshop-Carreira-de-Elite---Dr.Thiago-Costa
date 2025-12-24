@@ -32,7 +32,9 @@ const FAQ: React.FC = () => {
     <section className="py-24 px-6 bg-black border-t border-zinc-900">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-16 reveal opacity-0 translate-y-10 transition-all duration-700">
-          <h2 className="font-serif text-4xl md:text-5xl mb-6 text-white font-bold">Clareza Final</h2>
+          <h2 className="font-serif text-4xl md:text-5xl mb-6 text-white font-bold relative pb-6 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-0.5 after:bg-gradient-to-r after:from-transparent after:via-[#F4C542] after:to-transparent">
+            <span className="gold-text">Clareza Final</span>
+          </h2>
           <p className="text-zinc-300 font-light italic text-lg">Respostas diretas para quem não tem tempo a perder.</p>
         </div>
 

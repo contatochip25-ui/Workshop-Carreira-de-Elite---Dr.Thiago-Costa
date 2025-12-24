@@ -6,8 +6,8 @@ const InvisibleCycle: React.FC = () => {
   return (
     <section className="py-32 md:py-48 bg-black px-6 border-y border-zinc-900">
       <div className="max-w-4xl mx-auto">
-        <h2 className="font-serif text-3xl md:text-5xl text-center mb-20 md:mb-24 leading-tight text-white reveal opacity-0 translate-y-10 transition-all duration-700">
-          O ciclo de exaustão que destrói a carreira de quem não tem estratégia.
+        <h2 className="font-serif text-3xl md:text-5xl text-center mb-20 md:mb-24 leading-tight text-white reveal opacity-0 translate-y-10 transition-all duration-700 relative pb-6 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-0.5 after:bg-gradient-to-r after:from-transparent after:via-[#F4C542] after:to-transparent">
+          O <span className="gold-text">ciclo de exaustão</span> que destrói a carreira de quem não tem estratégia.
         </h2>
 
         <div className="space-y-10 md:space-y-14">

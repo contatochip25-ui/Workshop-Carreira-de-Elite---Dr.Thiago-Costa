@@ -6,8 +6,8 @@ const MentalShift: React.FC = () => {
     <section className="py-20 md:py-32 px-6 bg-[#0a0a0a] relative overflow-hidden">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12 md:gap-16">
         <div className="w-full lg:w-3/5 text-center lg:text-left">
-          <h2 className="font-serif text-3xl md:text-5xl mb-10 leading-tight text-white reveal opacity-0 translate-y-10 transition-all duration-700">
-            O código invisível das escalas fixas: por que alguns médicos são sempre a prioridade?
+          <h2 className="font-serif text-3xl md:text-5xl mb-10 leading-tight text-white reveal opacity-0 translate-y-10 transition-all duration-700 relative pl-6 border-l-4 border-[#F4C542]">
+            O <span className="gold-text">código invisível</span> das escalas fixas: por que alguns médicos são sempre a prioridade?
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 text-left">

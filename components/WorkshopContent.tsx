@@ -35,8 +35,8 @@ const WorkshopContent: React.FC = () => {
     <section className="py-24 md:py-40 px-6 bg-[#0a0a0a]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-24">
-          <h2 className="font-serif text-4xl md:text-6xl mb-8 text-white reveal opacity-0 translate-y-10 transition-all duration-700">
-            A Rota da Maestria de Escala
+          <h2 className="font-serif text-4xl md:text-6xl mb-8 text-white reveal opacity-0 translate-y-10 transition-all duration-700 relative pb-6 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-0.5 after:bg-gradient-to-r after:from-transparent after:via-[#F4C542] after:to-transparent">
+            A Rota da <span className="gold-text">Maestria de Escala</span>
           </h2>
           <p className="text-zinc-300 text-lg md:text-xl max-w-2xl mx-auto reveal opacity-0 translate-y-10 transition-all duration-700 delay-100 font-light italic">
             Um roteiro técnico, direto e aplicável no seu próximo plantão. Sem teorias vazias.
