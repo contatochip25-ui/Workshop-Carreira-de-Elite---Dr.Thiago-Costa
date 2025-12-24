@@ -5,28 +5,28 @@ import { Target, UserCheck, Shield, Clock, TrendingUp } from 'lucide-react';
 const WorkshopContent: React.FC = () => {
   const items = [
     {
-      title: "Posicionamento Dentro das Unidades",
-      desc: "Como se comportar para ser notado positivamente pela coordenação sem parecer arrogante ou bajulador.",
+      title: "Posicionamento Estratégico na Unidade",
+      desc: "Como se comportar para ser a primeira opção da coordenação sem precisar bajular ninguém.",
       icon: <Target className="w-8 h-8 md:w-10 md:h-10 gold-text" />
     },
     {
-      title: "Construção de Confiança e Autoridade",
-      desc: "Atitudes práticas que aumentam a segurança da equipe no seu trabalho e garantem seu convite para a escala.",
+      title: "Engenharia de Autoridade Clínica",
+      desc: "Ações práticas que aumentam a segurança da equipe no seu trabalho e blindam seu lugar na escala.",
       icon: <UserCheck className="w-8 h-8 md:w-10 md:h-10 gold-text" />
     },
     {
-      title: "Como se Destacar sem Desgaste",
-      desc: "Dicas de postura relacional para se tornar indispensável nas unidades de saúde mais disputadas.",
+      title: "Networking de Trincheira",
+      desc: "Como identificar os tomadores de decisão reais de cada unidade e se tornar indispensável para eles.",
       icon: <Shield className="w-8 h-8 md:w-10 md:h-10 gold-text" />
     },
     {
-      title: "O Prazo de Entrada e Saída",
-      desc: "Como planejar sua passagem por unidades de alta demanda sem se queimar e garantindo sua transição de carreira.",
+      title: "Transição para o 'Time de Dentro'",
+      desc: "O passo a passo para sair de um plantão avulso e garantir sua entrada oficial na escala fixa.",
       icon: <Clock className="w-8 h-8 md:w-10 md:h-10 gold-text" />
     },
     {
-      title: "Rotina e Previsibilidade Real",
-      desc: "Como conquistar a escala fixa para finalmente ter tempo de estudar para a residência e planejar sua vida pessoal.",
+      title: "Liberdade e Previsibilidade",
+      desc: "Como estabilizar sua agenda para focar no que importa: sua residência e seu futuro como especialista.",
       icon: <TrendingUp className="w-8 h-8 md:w-10 md:h-10 gold-text" />
     }
   ];
@@ -36,10 +36,10 @@ const WorkshopContent: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-24">
           <h2 className="font-serif text-4xl md:text-6xl mb-8 text-white reveal opacity-0 translate-y-10 transition-all duration-700">
-            O que você vai aprender no Workshop
+            A Rota da Maestria de Escala
           </h2>
           <p className="text-zinc-300 text-lg md:text-xl max-w-2xl mx-auto reveal opacity-0 translate-y-10 transition-all duration-700 delay-100 font-light italic">
-            Um roteiro prático e aplicável imediatamente no seu próximo plantão.
+            Um roteiro técnico, direto e aplicável no seu próximo plantão. Sem teorias vazias.
           </p>
         </div>
 
@@ -57,7 +57,7 @@ const WorkshopContent: React.FC = () => {
           ))}
           
           <div className="p-12 border-2 border-dashed border-zinc-700 flex flex-col justify-center items-center text-center reveal opacity-0 translate-y-10 bg-zinc-900/20">
-            <p className="text-zinc-200 italic text-lg font-medium leading-relaxed">Interação ao vivo e Q&A direto com o Dr. Thiago para tirar suas dúvidas.</p>
+            <p className="text-zinc-200 italic text-lg font-medium leading-relaxed">Sessão exclusiva de Q&A ao vivo para resolver os gargalos da sua carreira agora.</p>
           </div>
         </div>
       </div>

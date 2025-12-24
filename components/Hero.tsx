@@ -24,8 +24,8 @@ const Hero: React.FC = () => {
               <Presentation className="gold-text w-4 h-4" />
             </div>
             <div className="flex flex-col">
-              <span className="text-white font-bold text-[10px] md:text-xs tracking-[0.2em] uppercase">Workshop Carreira Médica</span>
-              <span className="text-[#F4C542] text-[8px] uppercase tracking-widest leading-none mt-1 font-semibold">Maestria da Carreira de Elite</span>
+              <span className="text-white font-bold text-[10px] md:text-xs tracking-[0.2em] uppercase">Estratégia de Carreira Médica</span>
+              <span className="text-[#F4C542] text-[8px] uppercase tracking-widest leading-none mt-1 font-semibold">Workshop Maestria de Escala</span>
             </div>
           </div>
 
@@ -54,22 +54,22 @@ const Hero: React.FC = () => {
           {/* Tagline */}
           <div className="reveal opacity-0 translate-y-6 transition-all duration-700">
             <span className="gold-text text-[8px] md:text-[10px] uppercase tracking-[0.4em] font-black bg-[#F4C542]/10 px-4 py-2 rounded-full border border-[#F4C542]/30 backdrop-blur-sm inline-block mb-8">
-              O FIM DA ESCASSEZ MÉDICA
+              O FIM DA DEPENDÊNCIA DE PLANTÕES AVULSOS
             </span>
           </div>
           
           {/* Smaller, cleaner Headline */}
           <h1 className="font-serif text-[1.8rem] sm:text-3xl md:text-5xl lg:text-[3.5rem] font-bold mb-8 md:mb-10 leading-[1.2] text-white reveal opacity-0 translate-y-10 transition-all duration-700 delay-100 drop-shadow-xl">
-            O médico deixou de ser raro.<br />
+            O mercado médico mudou e você está ficando para trás.<br />
             <span className="italic text-[#F4C542] block mt-1">
-              Agora é ele quem implora por espaço no mercado.
+              CRM não é mais garantia de escala. Estratégia é.
             </span>
           </h1>
           
           {/* Subtext with balanced size - Contrast optimized for #E5E5E5 equivalent */}
           <div className="reveal opacity-0 translate-y-10 transition-all duration-700 delay-200 max-w-2xl mx-auto mb-12 md:mb-16">
              <p className="text-sm sm:text-base md:text-xl text-zinc-100 leading-relaxed font-light">
-               O problema não é falta de estudo ou esforço, é não entender o jogo comportamental que define quem fica com as <span className="text-white font-bold">escalas fixas</span> e quem é descartado. Aprenda a sair da disputa por <span className="text-white font-bold">plantões avulsos</span>.
+               Pare de mendigar oportunidades em grupos de WhatsApp. Entenda os <span className="text-white font-bold">códigos comportamentais</span> que garantem escalas fixas e previsibilidade financeira para médicos recém-formados.
              </p>
           </div>
 
@@ -77,7 +77,7 @@ const Hero: React.FC = () => {
           <div className="flex flex-col items-center reveal opacity-0 translate-y-10 transition-all duration-700 delay-300">
             <button className="premium-led-btn w-full sm:w-auto sm:min-w-[320px] main-cta-button shadow-2xl shadow-[#F4C542]/10 hover:scale-105 transition-transform">
               <div className="premium-led-btn-inner px-8 py-5 md:px-12 md:py-6 text-[13px] md:text-base flex items-center justify-center space-x-3">
-                <span className="font-black tracking-[0.2em] text-[#F4C542]">COMPRAR INGRESSO | LOTE 01</span>
+                <span className="font-black tracking-[0.2em] text-[#F4C542]">QUERO MINHA ESCALA FIXA</span>
                 <ChevronRight className="w-5 h-5 text-[#F4C542]" />
               </div>
             </button>
@@ -89,7 +89,7 @@ const Hero: React.FC = () => {
               </div>
               <div className="flex items-center justify-center text-[11px] md:text-sm font-black uppercase tracking-widest px-1 space-x-2">
                 <Ticket className="w-4 h-4 gold-text" />
-                <span className="text-zinc-100">13% dos ingressos vendidos a R$27,00</span>
+                <span className="text-zinc-100">13% das vagas preenchidas no Lote 01</span>
               </div>
             </div>
           </div>

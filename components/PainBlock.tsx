@@ -4,11 +4,11 @@ import { AlertCircle } from 'lucide-react';
 
 const PainBlock: React.FC = () => {
   const pains = [
-    "Plantões longos, cansativos e repetitivos que sugam sua energia.",
-    "A sensação constante de estar sempre correndo atrás de algo que não alcança.",
-    "Insegurança silenciosa nas decisões clínicas fora do ambiente acadêmico.",
-    "Falta de clareza absoluta sobre qual especialização seguir e por quê.",
-    "O medo paralisante de escolher o caminho errado e pagar caro depois."
+    "Viver na incerteza de plantões avulsos que podem sumir a qualquer momento.",
+    "A sensação de ser apenas um 'tapa-buraco' de escala, facilmente substituível.",
+    "A exaustão de escalas caóticas que impedem qualquer plano sério de residência.",
+    "O medo silencioso de estar perdendo os melhores anos de construção de carreira.",
+    "Mendigar datas em grupos de WhatsApp enquanto outros médicos garantem o 'time de dentro'."
   ];
 
   return (
@@ -16,12 +16,12 @@ const PainBlock: React.FC = () => {
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center space-x-4 mb-10 reveal opacity-0 translate-y-10 transition-all duration-700">
            <div className="h-px flex-1 bg-zinc-800"></div>
-           <span className="font-serif italic text-xl md:text-2xl text-zinc-400">Identificação</span>
+           <span className="font-serif italic text-xl md:text-2xl text-zinc-400">O Confronto</span>
            <div className="h-px flex-1 bg-zinc-800"></div>
         </div>
 
         <h2 className="font-serif text-3xl md:text-5xl text-center mb-12 md:mb-16 leading-tight text-white reveal opacity-0 translate-y-10 transition-all duration-700">
-          Você sente que o diploma foi o começo, mas a direção sumiu.
+          O CRM deixou de ser um passaporte. Agora, ele é apenas o começo da disputa.
         </h2>
 
         <div className="space-y-4 md:space-y-6">
@@ -41,8 +41,8 @@ const PainBlock: React.FC = () => {
           ))}
         </div>
 
-        <p className="mt-12 md:mt-16 text-center text-zinc-400 italic text-base md:text-lg reveal opacity-0 translate-y-10 transition-all duration-700 px-4">
-          "O tom aqui não é de reclamação, é de realidade. O mercado não perdoa a falta de clareza."
+        <p className="mt-12 md:mt-16 text-center text-zinc-400 italic text-base md:text-lg reveal opacity-0 translate-y-10 transition-all duration-700 px-4 leading-relaxed">
+          "Continuar aceitando qualquer plantão não é esforço, é falta de direção. O mercado não perdoa médicos sem posicionamento."
         </p>
       </div>
     </section>
