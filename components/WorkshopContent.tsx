@@ -35,10 +35,10 @@ const WorkshopContent: React.FC = () => {
     <section className="py-20 md:py-40 px-6 bg-[#030303]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 md:mb-32">
-          <h2 className="font-serif text-3xl md:text-6xl mb-6 md:mb-8 text-white reveal opacity-0 translate-y-10 transition-all duration-700 relative pb-6 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-0.5 after:bg-gradient-to-r after:from-transparent after:via-[#F4C542] after:to-transparent">
+          <h2 className="font-serif text-4xl md:text-6xl mb-6 md:mb-8 text-white reveal opacity-0 translate-y-10 transition-all duration-700 relative pb-6 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-0.5 after:bg-gradient-to-r after:from-transparent after:via-[#F4C542] after:to-transparent leading-tight">
             A Rota da <span className="gold-text">Maestria de Escala</span>
           </h2>
-          <p className="text-zinc-400 text-base md:text-xl max-w-2xl mx-auto reveal opacity-0 translate-y-10 transition-all duration-700 delay-100 font-light italic leading-relaxed">
+          <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto reveal opacity-0 translate-y-10 transition-all duration-700 delay-100 font-light italic leading-relaxed">
             Um roteiro técnico, direto e aplicável no seu próximo plantão. Sem teorias vazias.
           </p>
         </div>
@@ -50,20 +50,20 @@ const WorkshopContent: React.FC = () => {
               className="premium-card p-8 md:p-12 rounded-2xl md:rounded-3xl group reveal opacity-0 translate-y-10"
               style={{ transitionDelay: `${idx * 100}ms` }}
             >
-              <div className="mb-8 w-12 h-12 md:w-14 md:h-14 bg-zinc-900 flex items-center justify-center rounded-xl md:rounded-2xl group-hover:bg-[#F4C542]/10 transition-colors duration-500">
+              <div className="mb-8 w-13 h-13 md:w-14 md:h-14 bg-zinc-900 flex items-center justify-center rounded-xl md:rounded-2xl group-hover:bg-[#F4C542]/10 transition-colors duration-500">
                 {item.icon}
               </div>
-              <h3 className="font-serif text-xl md:text-3xl mb-4 md:mb-6 text-white group-hover:gold-text transition-colors font-bold tracking-tight leading-tight">
+              <h3 className="font-serif text-2xl md:text-3xl mb-4 md:mb-6 text-white group-hover:gold-text transition-colors font-bold tracking-tight leading-tight">
                 {item.title}
               </h3>
-              <p className="text-zinc-400 text-sm md:text-lg leading-relaxed font-light group-hover:text-zinc-200 transition-colors duration-500">
+              <p className="text-zinc-400 text-base md:text-lg leading-relaxed font-light group-hover:text-zinc-200 transition-colors duration-500">
                 {item.desc}
               </p>
             </div>
           ))}
           
           <div className="p-8 md:p-12 rounded-2xl md:rounded-3xl border-2 border-dashed border-zinc-900 flex flex-col justify-center items-center text-center reveal opacity-0 translate-y-10 bg-transparent hover:border-[#F4C542]/20 transition-all duration-500">
-            <p className="text-zinc-400 italic text-base md:text-lg font-medium leading-relaxed">
+            <p className="text-zinc-400 italic text-lg md:text-lg font-medium leading-relaxed">
               Sessão exclusiva de Q&A ao vivo para resolver os gargalos da sua carreira agora.
             </p>
           </div>
