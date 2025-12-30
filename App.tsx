@@ -31,6 +31,23 @@ const MarqueeTransition: React.FC = () => {
   );
 };
 
+const AuthorityLeadershipImage: React.FC = () => {
+  return (
+    <section className="w-full bg-black py-12 md:py-24 px-0 md:px-6">
+      <div className="max-w-7xl mx-auto reveal opacity-0 translate-y-10 transition-all duration-1000">
+        <div className="relative aspect-[16/9] md:aspect-[21/9] w-full overflow-hidden shadow-2xl">
+          <img 
+            src="https://raw.githubusercontent.com/contatochip25-ui/DR.THIAGO-COSTA/main/public/images/drthiago3.jpg" 
+            alt="Dr. Thiago Costa com equipe médica - Liderança e Autoridade" 
+            className="w-full h-full object-cover object-center grayscale hover:grayscale-0 transition-all duration-1000"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20"></div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 const App: React.FC = () => {
   useEffect(() => {
     const observerOptions = {
@@ -70,6 +87,9 @@ const App: React.FC = () => {
       {/* 3️⃣ Sessão de mecanismo / jogo comportamental */}
       <InvisibleCycle />
       <MentalShift />
+
+      {/* Imagem de Autoridade Estratégica entre Mecanismo e Solução */}
+      <AuthorityLeadershipImage />
       
       {/* 4️⃣ Sessão explicando o que o médico vai aprender no workshop */}
       <WorkshopContent />

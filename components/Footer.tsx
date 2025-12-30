@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
 
           <div className="text-center md:text-right space-y-4">
             <p className="text-zinc-400 text-[10px] uppercase tracking-[0.25em] font-bold">
-              © 2024 - Workshop de Carreira Médica. Todos os direitos reservados.
+              © 2025 - Workshop de Carreira Médica. Todos os direitos reservados.
             </p>
             <div className="flex justify-center md:justify-end space-x-8 text-zinc-300 text-[10px] uppercase tracking-[0.2em] font-black">
               <a href="#" className="hover:text-[#F4C542] transition-colors underline-offset-4 hover:underline">Termos de Uso</a>
