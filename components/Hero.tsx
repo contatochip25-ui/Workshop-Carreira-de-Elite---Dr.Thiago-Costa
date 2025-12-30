@@ -28,8 +28,6 @@ const Hero: React.FC = () => {
               <span className="text-[#F4C542] text-[8px] uppercase tracking-widest leading-none mt-1 font-semibold">Workshop Maestria de Escala</span>
             </div>
           </div>
-          
-          {/* Top Bar right side items removed to reposition near CTA */}
         </div>
       </div>
 
@@ -91,14 +89,14 @@ const Hero: React.FC = () => {
               </div>
             </button>
             
-            {/* Progress Bar */}
-            <div className="w-full sm:w-[320px] mt-3">
+            {/* Progress Bar - Subtle emphasis on price as requested */}
+            <div className="w-full sm:w-[320px] mt-4">
               <div className="w-full h-1.5 bg-zinc-800 rounded-full overflow-hidden mb-4">
                 <div className="h-full bg-white w-[13%]"></div>
               </div>
-              <div className="flex items-center justify-center text-[11px] md:text-sm font-black uppercase tracking-widest px-1 space-x-2">
-                <Ticket className="w-4 h-4 gold-text" />
-                <span className="text-zinc-100">16% dos ingressos vendidos a R$27,00</span>
+              <div className="flex items-center justify-center text-[11px] md:text-sm font-medium uppercase tracking-widest px-1 space-x-2 text-zinc-400">
+                <Ticket className="w-4 h-4 text-zinc-500 opacity-60" />
+                <span>16% dos ingressos vendidos a <span className="text-white font-black text-xs md:text-base ml-1">R$ 27,00</span></span>
               </div>
             </div>
           </div>
