@@ -3,22 +3,22 @@ import React from 'react';
 
 const SocialProof: React.FC = () => {
   return (
-    <section className="py-24 md:py-40 bg-black border-y border-zinc-900 px-6">
+    <section className="py-20 md:py-32 bg-black border-y border-zinc-900 px-6">
       <div className="max-w-4xl mx-auto text-center">
-        <p className="text-zinc-500 uppercase tracking-[0.5em] text-[10px] md:text-xs mb-12 font-black opacity-80">
+        <p className="text-zinc-300 uppercase tracking-[0.4em] text-[9px] md:text-xs mb-10 md:mb-12 font-black">
           Adesão em tempo real • Workshop Exclusivo
         </p>
         
-        <div className="flex flex-col items-center justify-center space-y-4">
-          <span className="text-3xl md:text-4xl gold-text font-black tracking-[0.2em] uppercase drop-shadow-xl">
+        <div className="flex flex-col items-center justify-center space-y-2">
+          <span className="text-xs md:text-base gold-text font-black tracking-[0.3em] uppercase drop-shadow-sm">
             Vagas Preenchidas: 13%
           </span>
-          <span className="text-lg md:text-lg text-white font-bold uppercase tracking-[0.3em] mt-2 opacity-90">
+          <span className="text-[10px] md:text-sm text-zinc-100 font-bold uppercase tracking-widest mt-2">
             Lote 01 encerrando em breve
           </span>
         </div>
         
-        <p className="mt-16 text-[11px] md:text-sm text-zinc-500 uppercase tracking-[0.25em] max-w-lg mx-auto leading-relaxed font-semibold px-6">
+        <p className="mt-12 md:mt-16 text-[10px] md:text-[12px] text-zinc-400 uppercase tracking-[0.2em] max-w-lg mx-auto leading-relaxed font-semibold">
           As vagas são rigorosamente limitadas para garantir a profundidade técnica e a interação direta durante o workshop ao vivo.
         </p>
       </div>
