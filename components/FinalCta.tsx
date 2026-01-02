@@ -12,7 +12,7 @@ const FinalCta: React.FC = () => {
         <div className="mb-12 md:mb-20 reveal opacity-0 translate-y-10 transition-all duration-1000">
           <div className="relative inline-block p-1 rounded-full bg-gradient-to-tr from-[#F4C542]/40 to-transparent">
             <img 
-              src="https://raw.githubusercontent.com/contatochip25-ui/DR.THIAGO-COSTA/main/public/images/fotoperfil.jpg" 
+              src="https://raw.githubusercontent.com/contatochip25-ui/DR.THIAGO-COSTA/main/public/images/drthiagobraçocruzado.png" 
               alt="Dr. Thiago Costa" 
               className="relative w-24 h-24 md:w-36 md:h-36 rounded-full grayscale-0 transition-all object-cover shadow-3xl"
             />
