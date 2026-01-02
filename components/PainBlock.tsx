@@ -1,50 +1,56 @@
 
 import React from 'react';
-import { AlertCircle } from 'lucide-react';
+import { ShieldAlert, Trash2, Smartphone, AlertTriangle } from 'lucide-react';
 
 const PainBlock: React.FC = () => {
   const pains = [
-    "Viver na incerteza de plantões avulsos que podem sumir a qualquer momento.",
-    "A sensação de ser apenas um 'tapa-buraco' de escala, facilmente substituível.",
-    "A exaustão de escalas caóticas que impedem qualquer plano sério de residência.",
-    "O medo silencioso de estar perdendo os melhores anos de construção de carreira.",
-    "Mendigar datas em grupos de WhatsApp enquanto outros médicos garantem o 'time de dentro'."
+    {
+      icon: <Smartphone className="w-6 h-6" />,
+      text: "Refém da velocidade do dedo em grupos caóticos de WhatsApp."
+    },
+    {
+      icon: <Trash2 className="w-6 h-6" />,
+      text: "Sendo tratado como 'tapa-buraco' por coordenações amadoras."
+    },
+    {
+      icon: <ShieldAlert className="w-6 h-6" />,
+      text: "Viver na incerteza de não saber se terá plantão na próxima semana."
+    }
   ];
 
   return (
-    <section className="py-28 md:py-48 bg-[#050505] px-6">
+    <section className="py-24 bg-[#050505] px-6 relative">
       <div className="max-w-4xl mx-auto">
-        <div className="flex items-center space-x-6 mb-12 md:mb-16 reveal opacity-0 translate-y-10 transition-all duration-1000">
-           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-zinc-800 to-zinc-800"></div>
-           <span className="font-serif italic text-xl md:text-3xl text-zinc-500">O Confronto</span>
-           <div className="h-px flex-1 bg-gradient-to-l from-transparent via-zinc-800 to-zinc-800"></div>
+        <div className="inline-flex items-center space-x-2 text-red-500/80 mb-8 reveal opacity-0 translate-y-6 transition-all duration-700">
+          <AlertTriangle className="w-4 h-4" />
+          <span className="text-[10px] font-black uppercase tracking-[0.4em]">O Cenário Real</span>
         </div>
 
-        <h2 className="font-serif text-[2.35rem] md:text-6xl text-center mb-16 md:mb-24 leading-[1.2] text-white reveal opacity-0 translate-y-10 transition-all duration-1000 relative pb-10 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-24 after:h-[1px] after:bg-gold-bg/40">
-          O CRM <span className="gold-text">deixou de ser um passaporte.</span> Agora, ele é apenas o <span className="gold-text italic">começo da disputa.</span>
+        <h2 className="font-serif text-[2.2rem] leading-tight text-white mb-16 reveal opacity-0 translate-y-10 transition-all duration-700">
+          O mercado médico <span className="gold-text italic">não perdoa</span> quem não tem estratégia.
         </h2>
 
-        <div className="space-y-6 md:space-y-8">
+        <div className="space-y-4">
           {pains.map((pain, idx) => (
             <div 
               key={idx} 
-              className="premium-card group flex items-start space-x-4 md:space-x-8 p-6 md:p-10 rounded-2xl reveal opacity-0 translate-y-10"
+              className="premium-card p-8 rounded-2xl flex items-start space-x-6 reveal opacity-0 translate-y-10 border-l-2 border-l-red-500/20"
               style={{ transitionDelay: `${idx * 150}ms` }}
             >
-              <div className="mt-1.5 shrink-0">
-                <AlertCircle className="w-5 h-5 md:w-7 md:h-7 text-zinc-700 group-hover:gold-text transition-all duration-500" />
+              <div className="shrink-0 text-red-500/40 group-hover:text-red-500 transition-colors">
+                {pain.icon}
               </div>
-              <p className="text-lg md:text-2xl text-zinc-300/90 font-light leading-relaxed group-hover:text-white transition-colors">
-                {pain}
+              <p className="text-lg text-zinc-300 font-light leading-relaxed">
+                {pain.text}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="mt-20 md:mt-32 p-8 md:p-16 border border-zinc-900 bg-white/[0.01] rounded-3xl text-center reveal opacity-0 translate-y-10 transition-all duration-1000">
-           <p className="text-zinc-400 italic text-lg md:text-2xl px-2 md:px-8 leading-relaxed font-light">
-             "Continuar aceitando qualquer plantão não é esforço, é falta de direção. O mercado não perdoa médicos sem posicionamento."
-           </p>
+        <div className="mt-16 p-8 border border-zinc-900 bg-white/[0.01] rounded-3xl reveal opacity-0 translate-y-10">
+          <p className="text-zinc-500 italic text-lg leading-relaxed font-light text-center">
+            "Enquanto você espera a sorte, 38 mil novos médicos entram no mercado todos os anos. A concorrência não vai diminuir. Sua estratégia precisa aumentar."
+          </p>
         </div>
       </div>
     </section>
