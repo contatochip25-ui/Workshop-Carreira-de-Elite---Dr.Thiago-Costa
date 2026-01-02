@@ -12,37 +12,37 @@ const PainBlock: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 md:py-32 bg-[#050505] px-6">
+    <section className="py-28 md:py-48 bg-[#050505] px-6">
       <div className="max-w-4xl mx-auto">
-        <div className="flex items-center space-x-4 mb-8 md:mb-10 reveal opacity-0 translate-y-10 transition-all duration-700">
-           <div className="h-px flex-1 bg-zinc-900"></div>
-           <span className="font-serif italic text-xl md:text-2xl text-zinc-500">O Confronto</span>
-           <div className="h-px flex-1 bg-zinc-900"></div>
+        <div className="flex items-center space-x-6 mb-12 md:mb-16 reveal opacity-0 translate-y-10 transition-all duration-1000">
+           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-zinc-800 to-zinc-800"></div>
+           <span className="font-serif italic text-xl md:text-3xl text-zinc-500">O Confronto</span>
+           <div className="h-px flex-1 bg-gradient-to-l from-transparent via-zinc-800 to-zinc-800"></div>
         </div>
 
-        <h2 className="font-serif text-3xl md:text-5xl text-center mb-10 md:mb-20 leading-tight text-white reveal opacity-0 translate-y-10 transition-all duration-700 relative pb-6 md:pb-8 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-0.5 after:bg-gradient-to-r after:from-transparent after:via-[#F4C542] after:to-transparent">
-          O CRM <span className="gold-text">deixou de ser um passaporte.</span> Agora, ele é apenas o <span className="gold-text">começo da disputa.</span>
+        <h2 className="font-serif text-[2.35rem] md:text-6xl text-center mb-16 md:mb-24 leading-[1.2] text-white reveal opacity-0 translate-y-10 transition-all duration-1000 relative pb-10 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-24 after:h-[1px] after:bg-gold-bg/40">
+          O CRM <span className="gold-text">deixou de ser um passaporte.</span> Agora, ele é apenas o <span className="gold-text italic">começo da disputa.</span>
         </h2>
 
-        <div className="space-y-4 md:space-y-6">
+        <div className="space-y-6 md:space-y-8">
           {pains.map((pain, idx) => (
             <div 
               key={idx} 
-              className="premium-card group flex items-start space-x-3 md:space-x-6 p-5 md:p-8 rounded-xl reveal opacity-0 translate-y-10"
-              style={{ transitionDelay: `${idx * 100}ms` }}
+              className="premium-card group flex items-start space-x-4 md:space-x-8 p-6 md:p-10 rounded-2xl reveal opacity-0 translate-y-10"
+              style={{ transitionDelay: `${idx * 150}ms` }}
             >
               <div className="mt-1.5 shrink-0">
-                <AlertCircle className="w-4.5 h-4.5 md:w-6 md:h-6 text-zinc-600 group-hover:gold-text transition-colors duration-500" />
+                <AlertCircle className="w-5 h-5 md:w-7 md:h-7 text-zinc-700 group-hover:gold-text transition-all duration-500" />
               </div>
-              <p className="text-base md:text-xl text-zinc-300 font-light leading-relaxed group-hover:text-zinc-100 transition-colors">
+              <p className="text-lg md:text-2xl text-zinc-300/90 font-light leading-relaxed group-hover:text-white transition-colors">
                 {pain}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="mt-12 md:mt-24 p-6 md:p-12 border border-zinc-900 bg-zinc-900/10 rounded-xl md:rounded-2xl text-center reveal opacity-0 translate-y-10 transition-all duration-700">
-           <p className="text-zinc-400 italic text-base md:text-lg px-2 md:px-4 leading-relaxed font-light">
+        <div className="mt-20 md:mt-32 p-8 md:p-16 border border-zinc-900 bg-white/[0.01] rounded-3xl text-center reveal opacity-0 translate-y-10 transition-all duration-1000">
+           <p className="text-zinc-400 italic text-lg md:text-2xl px-2 md:px-8 leading-relaxed font-light">
              "Continuar aceitando qualquer plantão não é esforço, é falta de direção. O mercado não perdoa médicos sem posicionamento."
            </p>
         </div>

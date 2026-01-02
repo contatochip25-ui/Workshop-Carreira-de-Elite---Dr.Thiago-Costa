@@ -18,12 +18,12 @@ import StickyCTA from './components/StickyCTA.tsx';
 const MarqueeTransition: React.FC = () => {
   const text = "INSCRIÇÕES ABERTAS • VAGAS LIMITADAS • INSCRIÇÕES ABERTAS • VAGAS LIMITADAS";
   return (
-    <div className="w-full bg-zinc-950 border-y border-zinc-900 overflow-hidden py-3 relative z-20">
+    <div className="w-full bg-zinc-950 border-y border-zinc-900 overflow-hidden py-5 md:py-6 relative z-20">
       <div className="animate-marquee-flow whitespace-nowrap flex">
-        <span className="text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] text-zinc-400 px-4">
+        <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.4em] text-zinc-500 px-6">
           {text} • {text} • {text}
         </span>
-        <span className="text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] text-zinc-400 px-4">
+        <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.4em] text-zinc-500 px-6">
           {text} • {text} • {text}
         </span>
       </div>
@@ -33,15 +33,15 @@ const MarqueeTransition: React.FC = () => {
 
 const AuthorityLeadershipImage: React.FC = () => {
   return (
-    <section className="w-full bg-black py-12 md:py-24 px-0 md:px-6">
+    <section className="w-full bg-black py-20 md:py-32 px-6">
       <div className="max-w-7xl mx-auto reveal opacity-0 translate-y-10 transition-all duration-1000">
-        <div className="relative aspect-[16/9] md:aspect-[21/9] w-full overflow-hidden shadow-2xl">
+        <div className="relative aspect-[16/9] md:aspect-[21/9] w-full overflow-hidden rounded-3xl shadow-3xl border border-white/5">
           <img 
             src="https://raw.githubusercontent.com/contatochip25-ui/DR.THIAGO-COSTA/main/public/images/drthiago3.jpg" 
-            alt="Dr. Thiago Costa com equipe médica - Liderança e Autoridade" 
+            alt="Dr. Thiago Costa com equipe médica" 
             className="w-full h-full object-cover object-center grayscale hover:grayscale-0 transition-all duration-1000"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
         </div>
       </div>
     </section>
@@ -72,44 +72,20 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-[#0a0a0a]">
-      {/* MANTIDO INTACTO - HERO */}
       <Hero />
-      
-      {/* Elemento de Transição Marquee */}
       <MarqueeTransition />
-      
-      {/* 1️⃣ Sessão de aprofundamento da dor e identificação */}
       <PainBlock />
-      
-      {/* 2️⃣ Sessão de quebra de crença (por que esforço ≠ resultado) */}
       <MarketChange />
-      
-      {/* 3️⃣ Sessão de mecanismo / jogo comportamental */}
       <InvisibleCycle />
       <MentalShift />
-
-      {/* Imagem de Autoridade Estratégica entre Mecanismo e Solução */}
       <AuthorityLeadershipImage />
-      
-      {/* 4️⃣ Sessão explicando o que o médico vai aprender no workshop */}
       <WorkshopContent />
-      
-      {/* 5️⃣ Sessão de estrutura do evento (como vai funcionar / elegibilidade) */}
       <Eligibility />
-      
-      {/* 6️⃣ Sessão sobre o Dr. Thiago (autoridade contextual) */}
       <Authority />
-      
-      {/* 7️⃣ Sessão de provas sociais (vídeos/depoimentos) */}
       <VideoTestimonials />
-      
-      {/* FAQ e Reforço de Adesão antes do CTA Final */}
       <FAQ />
       <SocialProof />
-      
-      {/* 8️⃣ Sessão de CTA final */}
       <FinalCta />
-      
       <Footer />
       <StickyCTA />
     </div>
